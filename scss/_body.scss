@@ -1,3 +1,30 @@
 body {
     color: maroon;
+    font-size: 100%;
+    margin:0 auto;
+    /* padding:0 auto; */
+    font-family: Raleway;
+    text-align: center;
+
+
+
+
+
+}
+
+.wrapper-home {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.menu-btn { 
+    width: 55px;
+    height: 40px;
+    padding: 5px;
+}
+
+.show header nav {
+    display:block;
 }
