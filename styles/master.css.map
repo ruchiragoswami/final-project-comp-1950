@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/master.scss"],"names":[],"mappings":"AACA;EACI","file":"master.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/_body.scss","../scss/_header.scss","../scss/_footer.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI;EACA;EACA;;;ACFJ;EACI","file":"master.css"}

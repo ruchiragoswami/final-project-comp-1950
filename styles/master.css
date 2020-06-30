@@ -1,5 +1,15 @@
 body {
-  color: orange;
+  color: maroon;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+footer {
+  background-color: pink;
 }
 
 /*# sourceMappingURL=master.css.map */

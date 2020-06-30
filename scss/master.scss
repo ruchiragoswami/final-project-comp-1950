@@ -1,4 +1,12 @@
+// HTML Partials
 
-body {
-    color: orange;
-}
+@use 'reset';
+@use 'body';
+@use 'header';
+@use 'nav';
+@use 'wrapper';
+@use 'type';
+@use 'footer';
+
+
+
