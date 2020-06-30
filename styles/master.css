@@ -151,7 +151,7 @@ nav a:hover::before {
 }
 footer {
   background-color: pink;
-  padding: 0.5em 0;
+  padding: 0.3em 0 1.1em;
 }
 
 .fa {
