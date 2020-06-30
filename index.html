@@ -6,6 +6,7 @@
     <title>COMP-1950 | Home </title>
 
     <link rel="stylesheet" href="styles/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="scripts/scripts.js" defer> </script>
 </head>
@@ -40,7 +41,14 @@
 
 <main>
     <div class="home-banner"> 
-       <!-- <img src="images/banner-home.jpg" alt="BCIT Burnaby Building"> -->
+       
+        <picture>
+            <source srcset="images/banner-home-medium.jpg" media="(max-width: 730px)">
+            <source srcset="images/banner-home-large.jpg" media="(max-width: 920px)">
+            <img src="images/banner-home-small.jpg" alt="BCIT Burnaby Building">
+        </picture>
+
+
 
     </div> <!-- end home-banner -->
 
@@ -83,16 +91,30 @@
 </main>
 
 <footer>
-    <div> 
-       <ul>
-           <li><a href="">Lorem.</a></li>
-           <li><a href="">Natus.</a></li>
-           <li><a href="">Ea!</a></li>
-       </ul>
+   
+    <div>
+        <p> 
+            3700 Willingdon Avenue <br> 
+            Burnaby, British Columbia <br> 
+            Canada V5G 3H2  <br> 
+
+        </p>
     </div>
 
     <div> 
-        Follow us on:
+         <p>    Telephone: 604-434-5734 <br>
+            Toll-free (Can/Us) : 1-866-434-1610
+        </p>  
+    </div>
+
+    <div> 
+        Follow us on: <br>
+
+        <!-- Add font awesome icons -->
+        <a href="#0" class="fa fa-facebook"></a>
+        <a href="#0" class="fa fa-twitter"></a>
+        <a href="#0" class="fa fa-instagram"></a>
+        <a href="#0" class="fa fa-linkedin"></a>
 
     </div>
 
