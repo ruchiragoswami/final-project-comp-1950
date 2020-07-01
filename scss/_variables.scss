@@ -4,17 +4,20 @@
 
 // Colors
 
-$brandColor1: #501F3A;
+// 1=#501F3A; #4056A1; 3=#14A098; 5=#CCCCCC;
+
+$brandColor1: #303c6c ;
 $brandColor1Dark: darken($brandColor1, 20);
 $brandColor1Light: lighten($brandColor1, 10);
 
 $bodyBgColor: #303030;
 $wrapperBgColor: white;
 
-$brandColor2: #0F292F;
-$brandColor3: #14A098;
+$brandColor2: #FBE8A6;
+$brandColor3: #F4976C;
 $brandColor4: #CB2D6F;
 $brandColor5: #CCCCCC;
+$brandColor6: #D2FDFF;
 
 
 

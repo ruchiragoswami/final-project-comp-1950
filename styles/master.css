@@ -18,7 +18,7 @@ body {
 
 body {
   background-color: #CCCCCC;
-  color: #501F3A;
+  color: #303c6c;
   font-size: 100%;
   margin: 0 auto;
   /* padding:0 auto; */
@@ -33,13 +33,13 @@ body {
 }
 
 .welcome1 {
-  color: #501F3A;
+  color: #303c6c;
   margin: 0 auto;
   padding: 0.5em;
 }
 
 .welcome2 {
-  background-color: #501F3A;
+  background-color: #303c6c;
   color: #CCCCCC;
   padding: 0.5em;
   line-height: 1.8em;
@@ -54,14 +54,14 @@ body {
   text-align: left;
   margin: 1em auto;
   padding-right: 0;
-  border: 2px solid #501F3A;
+  border: 2px solid #303c6c;
   width: 50%;
   line-height: 1.5em;
   font-size: 1.2em;
 }
 
 article {
-  background-color: #14A098;
+  background-color: #FBE8A6;
   font-size: 1.1em;
   padding: 0.1em 0 0.5em 0;
 }
@@ -69,7 +69,7 @@ article {
 header {
   width: 100%;
   margin: 0 auto;
-  background-color: #752d55;
+  background-color: #303c6c;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -87,7 +87,7 @@ header img {
 .logo {
   width: 100%;
   padding-left: 1em;
-  color: #CCCCCC;
+  color: #FBE8A6;
 }
 
 .menu-btn {
@@ -125,9 +125,13 @@ nav a {
   margin: 0 auto;
   font-weight: 700;
   font-size: 1em;
-  color: #CCCCCC;
+  color: #FBE8A6;
   text-transform: uppercase;
   width: 100%;
+}
+
+nav a:hover {
+  color: #CCCCCC;
 }
 
 nav a::before {
@@ -194,7 +198,7 @@ article {
 }
 
 footer {
-  background-color: #752d55;
+  background-color: #303c6c;
   color: #CCCCCC;
   padding: 0.3em 0 1.1em;
   margin-top: 0.5em;

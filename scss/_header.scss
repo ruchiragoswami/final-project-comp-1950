@@ -9,7 +9,7 @@ header {
     // height: auto;
     margin: 0 auto;
     // padding-bottom: 0.05em;
-    background-color: $brandColor1Light;
+    background-color: $brandColor1;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ header img {
     width: 100%;
     // border: 1px solid black;
     padding-left: 1em;
-    color: $brandColor5;
+    color: $brandColor2;
 }
 .menu-btn { 
     width: 55px;
