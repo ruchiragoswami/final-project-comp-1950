@@ -1,9 +1,25 @@
 
-footer {
-    background-color: pink;
-    padding: 0.3em 0 1.1em;
-    // border: 1px solid gold;
+@use 'variables' as *;
+@use 'mixins' as *;
 
+
+
+footer {
+    background-color: $brandColor1Light;
+    color: $brandColor5;
+    padding: 0.3em 0 1.1em;
+    margin-top:  0.5em;
+    // border-top: 2px solid $brandColor1;
+    // border: 1px solid gold;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    
+
+}
+
+.three-cols {
+  margin: 0.8em;
 }
 
 .fa {

@@ -1,0 +1,13 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.welcome1,
+.welcome2,
+.benefits,
+article {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5em;
+
+}

@@ -1,4 +1,7 @@
+// Nav Styles
 
+@use 'variables' as *;
+@use 'mixins' as *;
 
 nav {
     display: none;
@@ -6,6 +9,7 @@ nav {
     margin:0;
     padding:0;
 }
+    
 
 nav ul {
     // display: flex;
@@ -33,7 +37,7 @@ nav a  {
     // line-height: 1em;;
     font-weight: 700;
     font-size: 1em;
-    color: #444;
+    color: $brandColor5;
     // text-decoration: none;
     text-transform: uppercase;
     width: 100%;
@@ -43,7 +47,7 @@ nav a  {
 
 nav a:hover  {
    
-    color: #000;
+    // color: #000;
     // transform: scale(1.1);   
 }
 
@@ -52,7 +56,8 @@ nav a::before {
     display: block;
     height: 5px;
    
-    background-color: #444;
+    background-color: $brandColor5;
+    //  #444;
 
     position: absolute;
     top: 0;

@@ -1,0 +1,42 @@
+// Master Variables
+
+@use '_mixins' as *;
+
+// Colors
+
+$brandColor1: #501F3A;
+$brandColor1Dark: darken($brandColor1, 20);
+$brandColor1Light: lighten($brandColor1, 10);
+
+$bodyBgColor: #303030;
+$wrapperBgColor: white;
+
+$brandColor2: #0F292F;
+$brandColor3: #14A098;
+$brandColor4: #CB2D6F;
+$brandColor5: #CCCCCC;
+
+
+
+
+
+
+// Text Color
+
+$txtColorDark: black;
+$txtColorLight: white;
+
+// Fonts
+$headingFont : georgia; 
+$bodyFont: helvetica;
+$lineHeight : 1.4;
+
+// layout variables
+
+$pad: 30px;
+
+// Utility variable
+
+$hover: '&:hover, &:focus, &:active';
+$desktop: em(900);
+$tablet: em(640);
