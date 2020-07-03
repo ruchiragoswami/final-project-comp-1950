@@ -24,15 +24,122 @@
                 <ul>
                     <li><a href="/index.html"> Home </a></li>
                     <li><a href="about.html">About </a></li>
-                    <li><a href="#0"> Schedule </a></li>
+                    <li><a href="schedule.html"> Schedule </a></li>
                     <li><a href="lesson.html"> Lessons</a></li>
-                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="#0"> Contact</a></li>
                 </ul>        
             </nav>    
         </header>
 
 
         <main> 
+            <form action="#" method="POST">  
+    
+                <h1> Contact Us </h1>
+                <fieldset> 
+                  <legend>     <b>  Please Fill In  </b>  </legend>    
+                  <!-- <legend> <span> 1 </span>     <b>   Your Info </b>  </legend>     -->
+          
+                  <div class="input-group"> 
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" class="name"  pattern="[a-zA-Z ]+" required>
+                  </div> <!-- end input-group -->
+
+                  <div class="input-group"> 
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" class="name" pattern="[a-zA-Z ]+" required>
+                  </div> <!-- end input-group -->
+
+                  <div class="input-group"> 
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" class="email" required>
+                  </div> <!-- end input-group -->
+          
+                  <div class="input-group"> 
+                    <label for="stunum"> BCIT Student Number: </label>
+                    <input type="text" id="stunum" name="stunum" class="num" pattern= [aA][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9] >
+                  </div> <!-- end input-group -->
+          
+                  <div class="input-age"> 
+                    <p> Are You A: </p>
+                    <input type="radio" id="enrol1" name="enrolment" value="current" class="enrol">
+                    <label for="enrol1"> Current Student </label>
+                      <br> 
+                    <input type="radio" id="enrol2" name="enrolment" value="prospective" class="enrol" > <!-- checked -->
+                    <label for="enrol2"> Prospective Student </label>
+                    
+                  </div> <!-- end input-age -->
+                <!-- </fieldset> -->
+          
+          
+          
+                <!-- <fieldset>  -->
+
+                  <!-- <legend> <span> 2 </span> <b> Your profile  </b> </legend> -->
+                  
+                  <div class='input-bio'> 
+                    <label for="comments"> Message: </label>
+                    <textarea name="comments" id="comments" cols="30" rows="6"> </textarea>
+                  </div>  <!-- end input-bio -->
+          
+                  
+                  <!-- 
+                  <div class="input-role input-group"> 
+                    <label for="role"> Job Role: </label>
+                    <select id="role" name="role">
+                      <optgroup label="Web">
+                        <option> Front-End Developer </option>
+                        <option>PHP Developer </option>
+                        <option> Python Developer </option>
+                        <option> Rails Developer </option>
+                        <option> Web Designer </option>
+                        <option> WordPress Developer </option> 
+                      </optgroup>
+          
+                      <optgroup label="Mobile ">
+                        <option> Android Dewveloper </option>
+                        <option>iOS Developer </option>
+                        <option> Mobile Designer </option>
+                      </optgroup>
+          
+                      <optgroup label="Business">
+                        <option>Business Owner </option>
+                        <option>Freelancer </option>
+                      </optgroup>
+          
+                      <optgroup label="Other">
+                        <option>Secretary</option>
+                        <option>Maintenance</option>
+                      </optgroup>
+          
+                    </select>
+                  </div> end input-role 
+          
+          
+          
+                  <div class="input-interests"> 
+          
+                    <p>   Interests: </p>
+                    <input type="checkbox" id="development" value="development" name="interest[]" >
+                    <label for="development">Development</label>
+                    <br>
+          
+                    <input type="checkbox" id="design" value="design" name="interest[]">
+                    <label for="design">Design</label>
+                    <br>
+          
+                    <input type="checkbox" id="business" value="business" name="interest[]">
+                    <label for="business"> Business</label>
+                    <br>
+                  </div> end  -->
+                
+                </fieldset>
+          
+                <input type="submit" value="Send" class="push" onclick="alert('Thank you for submitting the form')">    
+          
+              </form>
+            
+        </main>
             
 
 
