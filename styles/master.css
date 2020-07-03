@@ -25,13 +25,6 @@ body {
   text-align: center;
 }
 
-.wrapper-home {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0.25em;
-}
-
 .welcome1 {
   color: #303c6c;
   margin: 0 auto;
@@ -188,6 +181,13 @@ nav a:hover::before {
     height: 550px;
   }
 }
+.wrapper-home {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.25em;
+}
+
 .welcome1,
 .welcome2,
 .benefits,

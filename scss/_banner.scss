@@ -1,4 +1,7 @@
 // Banner Styles
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .home-banner {
     // position: relative;
     // width: 95vw;
