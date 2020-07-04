@@ -1,9 +1,14 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-.wrapper-home {
+.wrapper-home, 
+.wrapper-schedule 
+ {
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
-    padding: 0.25em;
+    // padding: 0.25em;
 }
+
+
+

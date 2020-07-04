@@ -162,6 +162,100 @@ article {
     grid-area: six;
   }
 }
+.agenda {
+  border: 2px solid #303c6c;
+  text-align: center;
+  margin: 0.5em;
+  color: #303c6c;
+}
+
+.agenda li {
+  list-style-type: none;
+}
+
+.ag-odd {
+  background: #D2FDFF;
+}
+
+.ag-even {
+  background-color: #FBE8A6;
+}
+
+.ag6,
+.ag12 {
+  background-color: #6c4b30;
+  color: #D2FDFF;
+  border: none;
+}
+
+@media (min-width: 740px) {
+  .sch-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "one two three" "four five six" "seven eight nine" "ten eleven twelve";
+  }
+
+  .ag1 {
+    grid-area: one;
+  }
+
+  .ag2 {
+    grid-area: two;
+  }
+
+  .ag3 {
+    grid-area: three;
+  }
+
+  .ag4 {
+    grid-area: four;
+  }
+
+  .ag5 {
+    grid-area: five;
+  }
+
+  .ag6 {
+    grid-area: six;
+  }
+
+  .ag7 {
+    grid-area: seven;
+  }
+
+  .ag8 {
+    grid-area: eight;
+  }
+
+  .ag9 {
+    grid-area: nine;
+  }
+
+  .ag10 {
+    grid-area: ten;
+  }
+
+  .ag11 {
+    grid-area: eleven;
+  }
+
+  .ag12 {
+    grid-area: twelve;
+  }
+}
+@media (min-width: 920px) {
+  main {
+    padding-top: 3em;
+    padding-bottom: 6em;
+  }
+
+  .sch-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve ";
+  }
+}
 header {
   width: 100%;
   margin: 0 auto;
@@ -284,7 +378,8 @@ nav a:hover::before {
     height: 550px;
   }
 }
-.wrapper-home {
+.wrapper-home,
+.wrapper-schedule {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;

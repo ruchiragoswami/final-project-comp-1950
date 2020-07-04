@@ -1,0 +1,158 @@
+// Styles for Schedule Page
+
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// General body styles are transferred from styles of home page.
+
+
+.sch-container {
+    // width: 100%;
+    // display: flex;
+}
+
+.agenda {
+    border: 2px solid $brandColor1;
+    text-align: center;
+    // align-items: center;
+    margin: 0.5em;
+    color: $brandColor1;
+    // flex:1;
+    // width: 40%;
+    // display: ;
+
+
+}
+
+.agenda li {
+    list-style-type: none;
+}
+
+.ag-odd {
+    background:$brandColor6;
+}
+
+.ag-even {
+    background-color:$brandColor2;
+}
+
+.ag6,
+.ag12 {
+    background-color: $brandColor4;
+    color: $brandColor6;
+    border: none;
+}
+
+// Grid Styles 
+
+
+@media (min-width: 740px) {
+    .sch-container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: "one two three"
+                                "four five six"
+                                "seven eight nine"
+                                "ten eleven twelve" ;
+
+    }
+
+    .ag1 { 
+        grid-area: one;
+    }
+
+     .ag2 {
+         grid-area: two;
+    }
+
+     .ag3 {
+         grid-area: three;
+    }
+
+     .ag4 { 
+        grid-area: four;
+    }
+
+     .ag5 {
+         grid-area: five;
+    }
+
+     .ag6 {
+         grid-area: six;
+    }
+
+
+
+    .ag7 { 
+        grid-area: seven;
+    }
+
+     .ag8 {
+         grid-area: eight;
+    }
+
+     .ag9 {
+         grid-area: nine;
+    }
+
+     .ag10 { 
+        grid-area: ten;
+    }
+
+     .ag11 {
+         grid-area: eleven;
+    }
+
+     .ag12 {
+         grid-area: twelve;
+    }
+
+}
+
+
+@media (min-width: 920px) {
+
+    main {
+        padding-top: 3em;
+        padding-bottom: 6em;
+    }
+    .sch-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one two three four"
+                                "five six seven eight"
+                                "nine ten eleven twelve ";
+                            
+
+        
+    }
+
+    
+
+    // .ag1, 
+    // .ag6,
+    // .ag11 {
+    //     background-color: #fba6cc;
+    // }
+
+    // .ag2,
+    // .ag8,
+    // .ag12 {
+    //     background-color: #a6f3fb;
+    // }   
+
+    // .ag3,
+    // .ag5,
+    // .ag7,
+    // .ag10 {
+    //     background-color: #fbe8a6 ;
+    // }
+
+}
+
+
+
+    
+
