@@ -14,6 +14,9 @@ body {
     text-align: center;
 
 }
+.tile h1 {
+    font-size: 1.4em;
+}
 
 .tiles-home {
     margin: 1em auto;
@@ -23,24 +26,20 @@ body {
     // background-color: $brandColor1;
     color: $brandColor1;
     // margin: 0 auto;
-    padding: 0.5em ;
+    padding: 0.9em ;
     // border: 2px solid gold;
 }
 
 .welcome2 {
     background-color: $brandColor1;
     color: $brandColor5;
-    padding: 0.2em;
+    padding: 0.9em;
     line-height: 1.8em;
     font-size: 1.1em;
     margin: 1em auto;
 }
 
-.benefits ul {
-    // list-style-type: none;
-    
-    // color: $brandColor3;
-}
+
 
 
 h2 {
@@ -79,7 +78,13 @@ h2 {
     
 }
 
+.decor img {
+    width: 100%;
+    height: 100%;
+}
+
 article {
+    display: none;
     // width: %;
     // border: 2px solid $brandColor1;
     background-color: $brandColor2;
@@ -89,10 +94,26 @@ article {
 }
 
 
+
 @media (min-width :740px) { 
 
     body {
         padding: 0.5em;
+    
+    }
+
+    // .welcome1 p  {
+    //     font-size: 1.9em;
+    // }
+
+    .welcome1 h1,
+    .welcome1 p  {
+        font-size: 1.7em;
+    }
+
+    .welcome2 {
+        font-size: 0.6em;
+        padding:0;
     }
 
     .decor {
@@ -101,15 +122,27 @@ article {
         height: 280px;
         // height: 100%;
         // height: auto;
-        border: 2px solid red;
+        border: 2px solid $brandColor1;
     }
 
     //  .tile {
     //     height: auto;
-
-        
+    .box2 {
+        // height: 100%;
+        margin:0;
+    }
+     
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin:0 auto;
+        // vertical-align: middle;
+    }
 
     .tiles-home {
+        margin:0 0 0.5em 0;
         display: grid;
         grid-gap:10px ;
         grid-template-columns: 2fr 1fr 1fr;
@@ -165,6 +198,9 @@ article {
             grid-area: six;
         }
     
+
+
+
 
 
 }
