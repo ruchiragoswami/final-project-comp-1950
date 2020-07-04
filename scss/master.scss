@@ -1,7 +1,9 @@
 // HTML Partials
 
 @use 'reset';
-@use 'body';
+@use 'body-home';
+// @use 'body-about';
+// @use 'body-schedule';
 @use 'header';
 @use 'nav';
 @use 'banner';
