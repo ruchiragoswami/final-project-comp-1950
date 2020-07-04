@@ -1,0 +1,122 @@
+// Lessons Page Styles
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// General body styles are transferred from styles of home page.
+
+.les  {
+    @include intlink;
+    border: 2px solid $brandColor1;
+    margin: 0.5em;
+    font-weight: 600;
+    font-size: 1.4em;
+    background-color: $brandColor2;
+    // width: 45%;
+
+}
+
+
+
+
+
+@media (min-width: 720px) {
+    main {
+        // padding-top: 3em;
+        // padding-bottom: 6em;
+        padding: 3em 1em 6em;
+    }
+    
+   .les {
+       margin:0;
+   } 
+
+.les-container {
+    margin:0;
+    display: grid;
+    grid-gap: 0.4em;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "one two three"
+                         "four five six"
+                         "seven eight nine"
+                         "ten eleven twelve" ;
+
+    
+}
+
+.les1 {
+    grid-area: one;
+}
+
+ .les2 {
+     grid-area: two;
+}
+
+
+.les3  {
+     grid-area: three;
+}
+
+.les4 { 
+    grid-area: four;
+}
+
+.les5 {
+     grid-area: five;
+}
+
+
+.les6 {
+     grid-area: six;
+}
+
+
+
+.les7 { 
+    grid-area: seven;
+}
+
+ 
+ .les8 {
+     grid-area: eight;
+}
+
+ 
+ .les9 {
+     grid-area: nine;
+}
+
+ 
+ .les10 { 
+    grid-area: ten;
+}
+
+ .les11 {
+     grid-area: eleven;
+}
+
+ .les12 {
+     grid-area: twelve;
+}
+
+}
+
+@media (min-width: 920px) {
+
+    
+    .les-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one two three four"
+                                "five six seven eight"
+                                "nine ten eleven twelve ";
+                            
+
+        
+    }
+
+    
+
+    
+    
+
+}

@@ -2,7 +2,8 @@
 @use 'mixins' as *;
 
 .wrapper-home, 
-.wrapper-schedule 
+.wrapper-schedule,
+.wrapper-lesson
  {
     width: 100%;
     max-width: 1120px;
@@ -11,4 +12,7 @@
 }
 
 
+.wrapper-lesson {
+    padding: 0.25em;
+}
 

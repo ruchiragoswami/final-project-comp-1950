@@ -169,8 +169,17 @@ article {
   color: #303c6c;
 }
 
-.agenda li {
+.agenda ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.agenda h2 a {
+  text-decoration: none;
+}
+.agenda h2 a:hover, .agenda h2 a:focus {
+  color: #6c4b30;
 }
 
 .ag-odd {
@@ -183,9 +192,7 @@ article {
 
 .ag6,
 .ag12 {
-  background-color: #6c4b30;
-  color: #D2FDFF;
-  border: none;
+  background-color: #F4976C;
 }
 
 @media (min-width: 740px) {
@@ -252,6 +259,92 @@ article {
   }
 
   .sch-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve ";
+  }
+}
+.les {
+  border: 2px solid #303c6c;
+  margin: 0.5em;
+  font-weight: 600;
+  font-size: 1.4em;
+  background-color: #FBE8A6;
+}
+.les a {
+  text-decoration: none;
+}
+.les a:hover, .les a:focus {
+  color: #6c4b30;
+}
+
+@media (min-width: 720px) {
+  main {
+    padding: 3em 1em 6em;
+  }
+
+  .les {
+    margin: 0;
+  }
+
+  .les-container {
+    margin: 0;
+    display: grid;
+    grid-gap: 0.4em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "one two three" "four five six" "seven eight nine" "ten eleven twelve";
+  }
+
+  .les1 {
+    grid-area: one;
+  }
+
+  .les2 {
+    grid-area: two;
+  }
+
+  .les3 {
+    grid-area: three;
+  }
+
+  .les4 {
+    grid-area: four;
+  }
+
+  .les5 {
+    grid-area: five;
+  }
+
+  .les6 {
+    grid-area: six;
+  }
+
+  .les7 {
+    grid-area: seven;
+  }
+
+  .les8 {
+    grid-area: eight;
+  }
+
+  .les9 {
+    grid-area: nine;
+  }
+
+  .les10 {
+    grid-area: ten;
+  }
+
+  .les11 {
+    grid-area: eleven;
+  }
+
+  .les12 {
+    grid-area: twelve;
+  }
+}
+@media (min-width: 920px) {
+  .les-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve ";
   }
@@ -379,10 +472,14 @@ nav a:hover::before {
   }
 }
 .wrapper-home,
-.wrapper-schedule {
+.wrapper-schedule,
+.wrapper-lesson {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
+}
+
+.wrapper-lesson {
   padding: 0.25em;
 }
 

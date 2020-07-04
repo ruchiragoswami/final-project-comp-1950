@@ -7,26 +7,38 @@
 // General body styles are transferred from styles of home page.
 
 
-.sch-container {
-    // width: 100%;
-    // display: flex;
-}
+
 
 .agenda {
     border: 2px solid $brandColor1;
     text-align: center;
-    // align-items: center;
     margin: 0.5em;
     color: $brandColor1;
-    // flex:1;
-    // width: 40%;
-    // display: ;
+   
 
+}
+// .agenda h2,
+.agenda p {
+    // padding: 0 auto;
+    // border: 1px solid red;
+}
+
+.agenda p li{
 
 }
 
-.agenda li {
+
+
+.agenda ul {
     list-style-type: none;
+    margin:0;
+    padding:0;
+    // list-style: none;
+    // @include intlink;
+}
+
+.agenda h2 {
+    @include intlink;
 }
 
 .ag-odd {
@@ -39,26 +51,38 @@
 
 .ag6,
 .ag12 {
-    background-color: $brandColor4;
-    color: $brandColor6;
-    border: none;
+    background-color: $brandColor3;
+    // color: $brandColor6;
+    // border: none;
 }
 
 // Grid Styles 
 
 
 @media (min-width: 740px) {
-    .sch-container {
+    
+    // .agenda {
+    //     margin:0;
+    // }
+
+    
+    .sch-container
+ {
         margin: 0;
         display: grid;
+        // grid-gap: 1em;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(100px, auto);
+        // grid-gap: 20px;
+
         grid-template-areas: "one two three"
                                 "four five six"
                                 "seven eight nine"
                                 "ten eleven twelve" ;
 
     }
+
+ 
 
     .ag1 { 
         grid-area: one;
@@ -110,6 +134,8 @@
          grid-area: twelve;
     }
 
+
+
 }
 
 
@@ -131,24 +157,8 @@
 
     
 
-    // .ag1, 
-    // .ag6,
-    // .ag11 {
-    //     background-color: #fba6cc;
-    // }
-
-    // .ag2,
-    // .ag8,
-    // .ag12 {
-    //     background-color: #a6f3fb;
-    // }   
-
-    // .ag3,
-    // .ag5,
-    // .ag7,
-    // .ag10 {
-    //     background-color: #fbe8a6 ;
-    // }
+    
+    
 
 }
 
