@@ -1,0 +1,81 @@
+// About page styles
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.row {
+    border: 2px solid $brandColor1;
+    text-align: left;
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.row h2 {
+    text-align: center;
+    margin-bottom: 0.9em;
+}
+
+.evaluation,
+.pre,
+.start {
+    text-align:  center;
+}
+
+.start  li,
+.pre  li{
+    list-style-type: none;
+}
+
+@media (min-width: 720px) {
+
+    .row {
+        margin: 0;
+        background-color: $brandColor5;
+        // padding:0;
+    }
+
+    .course-info {
+        // margin:0;
+        // padding:0;
+        background-color: $wrapperBgColor;
+        // color: 
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows:minmax(100px, auto) ;
+        grid-template-areas:    "one one two two  "
+                                "four three three three"
+                                "five three three three"
+                                "five three three three"
+                    ;
+
+    
+    }
+
+    .pre {
+        grid-area: one;
+    }
+
+    .start {
+        grid-area: two;
+    }
+
+    .outline {
+        grid-area: three; 
+    }
+
+    .evaluation {
+        grid-area: four;
+        background-color: $brandColor2;
+    }
+
+    .idecor {
+        grid-area: five;
+    }
+
+
+
+}
