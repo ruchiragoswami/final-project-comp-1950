@@ -32,66 +32,65 @@
         </header>
 
 
-        <main> 
-            <form action="#" method="" name="contact-form">  
+<main> 
+  <h1> Contact Us </h1>
+
+    <form action="#" method="" name="contact-form">  
+
+        
+        <fieldset> 
+          <!-- <legend>     <b>  Please Fill In  </b>  </legend>     -->
+          <!-- <legend> <span> 1 </span>     <b>   Your Info </b>  </legend>     -->
+          
+          <div class="form-container"> 
+            <h2>  Please Fill In </h2>
+            <div class="input-group in1"> 
+              <label for="fname">First Name: </label>
+              <input type="text" id="fname" name="fname" class="name"  pattern="[a-zA-Z ]+" required>
+            </div> <!-- end input-group -->
+
+            <div class="input-group in2"> 
+              <label for="lname">Last Name: </label>
+              <input type="text" id="lname" name="lname" class="name" pattern="[a-zA-Z ]+" required>
+            </div> <!-- end input-group -->
+
+            <div class="input-group in3"> 
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" class="email" required>
+            </div> <!-- end input-group -->
     
-                <h1> Contact Us </h1>
-                <fieldset> 
-                  <legend>     <b>  Please Fill In  </b>  </legend>    
-                  <!-- <legend> <span> 1 </span>     <b>   Your Info </b>  </legend>     -->
-          
-                  <div class="input-group"> 
-                    <label for="fname">First Name: </label>
-                    <input type="text" id="fname" name="fname" class="name"  pattern="[a-zA-Z ]+" required>
-                  </div> <!-- end input-group -->
-
-                  <div class="input-group"> 
-                    <label for="lname">Last Name: </label>
-                    <input type="text" id="lname" name="lname" class="name" pattern="[a-zA-Z ]+" required>
-                  </div> <!-- end input-group -->
-
-                  <div class="input-group"> 
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" class="email" required>
-                  </div> <!-- end input-group -->
-          
-                  <div class="input-group"> 
-                    <label for="stunum"> BCIT Student Number: </label>
-                    <input type="text" id="stunum" name="stunum" class="num" pattern= [aA][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9] >
-                  </div> <!-- end input-group -->
-          
-                  <div class="input-age"> 
-                    <p> Are You A: </p>
-                    <input type="radio" id="enrol1" name="enrolment" value="current" class="enrol">
-                    <label for="enrol1"> Current Student </label>
-                      <br> 
-                    <input type="radio" id="enrol2" name="enrolment" value="prospective" class="enrol" > <!-- checked -->
-                    <label for="enrol2"> Prospective Student </label>
-                    
-                  </div> <!-- end input-age -->
-                <!-- </fieldset> -->
-          
-          
-          
-                <!-- <fieldset>  -->
-
-                  <!-- <legend> <span> 2 </span> <b> Your profile  </b> </legend> -->
-                  
-                  <div class='input-bio'> 
-                    <label for="comments"> Message: </label>
-                    <textarea name="comments" id="comments" cols="30" rows="6"> </textarea>
-                  </div>  <!-- end input-bio -->
-          
-                  
-                  
-                </fieldset>
-          
-                <input type="submit" value="Send" class="push">    
-          
-              </form>
+            <div class="input-group in4"> 
+              <label for="stunum"> BCIT Student Number: </label>
+              <input type="text" id="stunum" name="stunum" class="num" pattern= [aA][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9] >
+            </div> <!-- end input-group -->
+  
+            <div class="input-group in5"> 
+              <p> You Are A: </p>
+              <input type="radio" id="enrol1" name="enrolment" value="current" class="enrol">
+              <label for="enrol1"> Current Student </label>
+                <br>
+              <input type="radio" id="enrol2" name="enrolment" value="prospective" class="enrol" > <!-- checked -->
+              <label for="enrol2"> Prospective Student </label>
+              
+            </div> <!-- end input-age -->
             
-        </main>
-            
+        
+          
+            <div class='input-msg in6'> 
+              <label for="comments"> Message: </label>
+              <textarea name="comments" id="comments" cols="30" rows="6"> </textarea>
+            </div>  <!-- end input-bio -->
+    
+          
+        </div> <!-- end form-container -->
+        </fieldset>
+  
+        <input type="submit" value="Send" class="push">    
+  
+      </form>
+    
+</main>
+    
 
 
         <footer>   

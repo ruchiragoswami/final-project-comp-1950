@@ -217,6 +217,10 @@ article {
   list-style-type: none;
 }
 
+table {
+  margin: 0 auto;
+}
+
 table th, td {
   text-align: center;
   padding: 8px;
@@ -479,26 +483,117 @@ p {
     grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve ";
   }
 }
-fieldset {
+h1 {
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+form {
   margin: 0 auto;
-  padding: 2em 0;
-  width: 85%;
+}
+
+fieldset {
+  border: none;
+  margin: 10px auto;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  padding: 0.6em;
+  margin-bottom: 2em;
   font-size: 1.4em;
   font-weight: 600;
 }
+.form-container h2 {
+  font-size: 1.1em;
+}
 
-form label {
+legend {
   display: inline-block;
-  width: 200px;
+}
+
+.input-group {
+  margin: 2em auto;
+  padding: 5px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #E8EEEF;
+}
+
+input:focus {
+  border: 5px solid #F4976C;
+  border-radius: 4px;
+}
+
+.in5 {
+  display: flex;
+  margin-top: 3em;
+}
+
+.in5 p {
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+
+.in5 input {
+  background-color: #D2FDFF;
+}
+
+.input-msg {
+  padding-top: 20px;
+  padding-bottom: 1em;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #D2FDFF;
+}
+
+textarea:focus {
+  border: 4px solid #F4976C;
+}
+
+.push {
+  width: 20%;
+  height: 50px;
+  background-color: #FBE8A6;
+  border-radius: 7px;
+  margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 5px;
-  text-align: right;
+  color: #303c6c;
+  font-size: 1em;
+  font-weight: bold;
 }
 
-input {
-  height: 30px;
+@media (min-width: 740px) {
+  .form-container {
+    width: 70%;
+    background-color: #F4F7F8;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px #CCCCCC, 0 0 0 20px #303c6c;
+    padding: 0.5px 15px;
+    margin: 30px auto;
+  }
 }
-
+@media (min-width: 920px) {
+  .form-container {
+    width: 50%;
+  }
+}
 header {
   width: 100%;
   margin: 0 auto;
