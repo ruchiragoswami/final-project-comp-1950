@@ -33,31 +33,24 @@
 
 <main> 
 
-<!-- 
+<!-- lesson content -->
+    <div class="column" >
+        <h1>Agenda</h1>
+        <ul>
+            <li><a href="#charset" >Charsets</a></li>
+            <li><a href="#html" >HTML, XHTML, HTML5</a></li>
+            <li><a href="#semantics" >Semantics</a></li>
+            <li><a href="#forms" >Forms, SVG, Multimedia</a></li>
+            <li><a href="#todo" >To Do</a></li>
+        </ul>
+    </div>
+
+    <div class="column" id="charset">
+        <h1>Character Sets And Languages</h1>
+        <p>The W3C recommends the UTF-8 charset for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
+    </div>
 
 
-Add Content Here
-
-
-
- -->
-
- <section>
-    <h1>Agenda</h1>
-    <ul>
-        <li>Charsets</li>
-        <li>HTML, XHTML, HTML5</li>
-        <li>Semantics</li>
-        <li>Forms, SVG, Multimedia</li>
-        <li>To Do</li>
-    </ul>
-</section>
-
-<section>
-    <h1>Character Sets And Languages</h1>
-    <p>The W3C recommends the UTF-8 charset for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
-</section>
-<section>
     <div class="column" >
         <h1>Assign Character Set</h1>
         <p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page:</p>
@@ -69,10 +62,8 @@ Add Content Here
             <li>An HTTP server can over-ride your charset preferences when it generates the HTTP header. Details on how to control this will be discussed later in this course.</li>                        
         </ul>
     </div>
-</section>
 
-<section>
-    <div class="column" >
+    <div class="column" id="html">
         <h1>HTML lang Attribute</h1>
         <p>Use the lang="" attribute to declare the language in HTML. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".</p>
         <p>Use the language abbreviations from the standard ISO 639-1 code set (don't use ISO 639-2).</p>
@@ -232,7 +223,7 @@ Add Content Here
         <p>Having trouble deciding which tag to use for what content? Try this HTML5 flowchart.</p>
     </div>
 
-    <div class="column" >
+    <div class="column" id="semantics" >
         <h1>HTML5 Semantic Alterations</h1>
         <p>HTML5 also brings a few notable semantic alterations to older tags:</p>
         <ul>
@@ -271,7 +262,7 @@ Add Content Here
         <p>In HTML5, each piece of sectioned content has its own self-contained outline. This means you wont need to worry as much about which level heading tag to use. You can use an h1 inside a section and it will be treated as the heading of the section, and have lesser semantic impact than an h1 that is at a higher level.</p>
     </div>
 
-    <div class="column" >
+    <div class="column" id="forms" >
         <h1>Forms</h1>
         <p>HTML 5 adds several new form attributes that prove quite useful, even if some are as yet poorly supported.</p>
         <ul>
@@ -299,11 +290,13 @@ Add Content Here
         <p>You can use SVG graphics with the img tag, just as with raster graphics. You can also use .svg as a CSS background-image.</p>
         <p>&ltimg src="images/logo.svg" alt="COMP 1950 logo" /></p>
         <p>The png on the left is 26KB. The .svg on the right is only 4KB.</p>
-        <img src="../images/comp1950_logo.png" alt="logo in png" />
-        <img src="../images/comp1950_logo.svg" alt="logo in svg" />
+        <div class="imgs" >
+            <img src="../images/comp1950_logo.png" alt="logo in png" />
+            <img src="../images/comp1950_logo.svg" alt="logo in svg" />   
+        </div>
         <p>Alternatively, you can use SVG code 'inline' with the svg tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your .html code. Just copy the source code from your .svg file and paste it directly into your .html!</p>
-        <code>&ltsvg viewBox="0 0 55 28">
-            &lt!-- svg code goes here... sometimes there is a LOT of code here! -->&lt/svg></code>
+        <code>&ltsvg viewBox="0 0 55 28"><br />
+            &lt!-- svg code goes here... sometimes there is a LOT of code here! -->&lt/svg></code><br />
         <h2>SVG Tools</h2>
         <p>Use an SVG application to help you create and manipulate your SVG code.</p>
         <ul>
@@ -328,18 +321,18 @@ Add Content Here
         </ul>
 
         <code>
-            &ltaudio controls="controls">
-            &ltsource src="media/house-a-square.mpg" type="audio/mpeg" />
-            &ltsource src="media/house-a-square.mp3" type="audio/mp3" />
-            &ltsource src="media/house-a-square.ogg" type="audio/ogg" />
+            &ltaudio controls="controls"><br />
+            &ltsource src="media/house-a-square.mpg" type="audio/mpeg" /><br />
+            &ltsource src="media/house-a-square.mp3" type="audio/mp3" /><br />
+            &ltsource src="media/house-a-square.ogg" type="audio/ogg" /><br />
             &lt/audio>
         </code><br />
 
         <audio controls="controls">
             <source src="../audios/house-a-square.mp3" type="audio/mpeg" />                        
-        </audio>
+        </audio><br />
 
-        <a href="../audios/house-a-square.mp3" >Download the audio</a>
+        <a href="../audios/house-a-square.mp3" >Download the audio</a><br />
 
         <h2>Video</h2>
         <p>The video element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.
@@ -359,13 +352,13 @@ Add Content Here
         </ul>
 
         <code>
-            &ltvideo 	preload="none" 
-                controls="controls" 
-                poster="media/poster-bear-in-water.jpg">
+            &ltvideo 	preload="none" <br />
+                controls="controls" <br />
+                poster="media/poster-bear-in-water.jpg"><br />
                 
-                &ltsource src="media/bear-in-water.webm" type="video/webm" /> 
-                &ltsource src="media/bear-in-water.mp4" type="video/mp4" />
-                &ltsource src="media/bear-in-water.ogg" type="video/ogg" />
+                &ltsource src="media/bear-in-water.webm" type="video/webm" /> <br />
+                &ltsource src="media/bear-in-water.mp4" type="video/mp4" /><br />
+                &ltsource src="media/bear-in-water.ogg" type="video/ogg" /><br />
                 &lt/video>	
         </code>
 
@@ -373,8 +366,8 @@ Add Content Here
             controls="controls" 
             poster="media/poster-bear-in-water.jpg">                         
             <source src="../videos/bear-in-water.mp4" type="video/mp4" />
-        </video>
-        <a href="../videos/bear-in-water.mp4" >Download the video</a>
+        </video><br />
+        <a href="../videos/bear-in-water.mp4" >Download the video</a><br />
     </div>
 
     <div class="column" >
@@ -394,10 +387,9 @@ Add Content Here
         </ul>
     </div>
 
-</section>
 
-<section>
-    <div class="column" >
+    <div class="column" id="todo" >
+        <h1>To Do</h1>
         <ul>
             <li>Download, review, and complete the homework assignment from D2L</li>
             <li>Review the HTML5 semantic tags, know how and when to use them to maxmize the semantic strucure of your HTML</li>
