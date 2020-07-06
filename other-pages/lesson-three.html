@@ -33,32 +33,22 @@
 
 <main> 
 
-<!-- 
-
-
-Add Content Here
-
-
-
- -->
-
- <section>
+<!-- lesson content -->
 
     <div class="column" >
         <h1>Agenda</h1>
         <ul>
-            <li>Referencing Stylesheets</li>
-            <li>Importing</li>
-            <li>Fonts</li>
-            <li>Compact CSS</li>
-            <li>Advanced Selectors</li>
-            <li>Rule Specificity</li>
-            <li>To Do</li>
+            <li><a href="#refer" >Referencing Stylesheets</a></a></li>
+            <li><a href="#import" >Importing</a></li>
+            <li><a href="#fonts" >Fonts</a></li>
+            <li><a href="#compact" >Compact CSS</a></li>
+            <li><a href="#selectors" >Advanced Selectors</a></li>
+            <li><a href="#rules" >Rule Specificity</a></li>
+            <li><a href="#todo" >To Do</a></li>
         </ul>
     </div>
-</section>
-<section>
-    <div class="column" >
+
+    <div class="column" id="refer">
         <h1>Referencing CSS</h1>
         <p>When linking to external style sheets, there are a number of features to be aware of:</p>
         <ul>
@@ -145,7 +135,7 @@ Add Content Here
         </code>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Alternate Styles</h1>
         <p>Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a title="".</p>
         <code>
@@ -156,7 +146,7 @@ Add Content Here
         </code>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Grouping Stylesheets</h1>
         <p>If more than one link tag shares the same title="" then they will be grouped together.</p>
         <code>
@@ -171,7 +161,7 @@ Add Content Here
         <p>To enable alternate stylesheet switching, you can either apply some javascript to manage the switch with hyperlinks, or use Firefox for alternate stylesheets.</p>
     </div>
 
-    <div>
+    <div class="column" id="import" >
         <h1>@import: Managing Multiple CSS Files</h1>
         <p>You can use the @import method to import multiple stylesheets from a basic stylesheet that you link to. This will reduce the clutter that can sometimes occur within the &lthead> section.
             It is also a great place to be able to manage your CSS. From your main document, create a &ltlink> to your styles.css page.</p>
@@ -186,7 +176,7 @@ Add Content Here
 
     </div>
 
-    <div>
+    <div class="column" >
         <h1>@charset: Assigning CSS Character Set</h1>
         <p>If your CSS files only contain standard keyboard characters, assigning the character set is not required. The CSS language itself does not use any exotic characters, so assigning a charset is often omitted. If, however, your CSS needs to use special characters, ensuring the correct character set can be very important. Eg: When using a pseudoclass to add content to HTML content: "Äwesome!"</p>
         <p>If needed, add the @charset rule to the top of the CSS document.</p>
@@ -198,7 +188,7 @@ Add Content Here
         </code>
     </div>
 
-    <div>
+    <div class="column" id="fonts" >
         <h1>@font-face And Font Servers</h1>
         <p>Fonts that aren't available on the client machine can be provided by a third-party font server or by your website's server.</p>
         <ul>
@@ -209,7 +199,7 @@ Add Content Here
         </ul>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Third Party Font Server</h1>
         <p>Browse the font server site, select the fonts you like and they wil provide you with code for a <link /> tag to add to your HTML. You can then use the font in your CSS.</p>
         <code>
@@ -224,7 +214,7 @@ Add Content Here
         <p>No longer stuck with 'Arial', 'Helvetica', 'Georgia' and the rest.</p>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Serve Fonts From Your Website</h1>
         <p>If the font(s) are copyright free, or if you have license to distribute a font, you can serve them yourself using the CSS @font-face directive.
             Different client systems will need fonts in varying formats, so if you are distributing the font yourself, be sure to have the font available in most common formats.</p>
@@ -253,7 +243,7 @@ Add Content Here
         <p>Don't get carried away with wild font choices. Some fonts have very poor readability, reducing accessibility.</p>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>CSS Measurements</h1>
         <p>In CSS, there are a number of measurement values that can be used in declarations.</p>
 
@@ -281,15 +271,12 @@ Add Content Here
         </ul>
     </div>
 
-</section>
-
-<section>
-    <div>
+    <div class="column" id="compact" >
         <h1>Compact CSS Code</h1>
         <p>When building your CSS rules, there are some easy ways to compact your code, reducing code bloat and filesize.</p>
     </div>
 
-    <div>
+    <div class="column" id="selectors" >
         <h1>Grouping selectors</h1>
         <ul>
             <li>If you would like to apply the same style to a multitude of different selectors, you can group them with the comma</li>
@@ -299,7 +286,7 @@ Add Content Here
         </ul>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Grouping comes to Classes</h1>
         <ul>
             <li>As well as grouping Elements, you can also group classes</li>
@@ -309,7 +296,7 @@ Add Content Here
             <li>Case is important! Remember to use a single rule for CSS naming and stick with it</li>                       
         </ul>
     </div>
-    <div>
+    <div class="column" >
         <h1>Rule Compacting</h1>
         <p>There are a lot of rules that will accept a compacted ruleset:</p>
         <ul>
@@ -355,12 +342,12 @@ Add Content Here
         <code>font: 1.3em "helvetica", sans-serif;</code>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>CSS Selectors</h1>
         <p>There are several advanced CSS selector techniques that provide plenty of options for the application of style.</p>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Universal Selector</h1>
         <ul>
             <li>This is a fairly widely supported selector: the asterisk *</li>
@@ -371,11 +358,7 @@ Add Content Here
         </ul>
     </div>
 
-    
-</section>
-
-<section>
-    <div>
+    <div class="column" >
         <h1>Pseudo-classes</h1>
         <p>A Pseudo-class is a selector that allows you to reference a specific action or attribute of an element. This is most often used when specifying a attributes, such as :visited and :link.</p>
         <p>There are other uses for pseudo elements, that will allow for greater detail in styling content, such as :first-letter and :first-line. These allow the browser to apply a style based on an unselected, but displayed element.
@@ -406,7 +389,7 @@ Add Content Here
         </ul>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Descendant Selectors</h1>
         <ul>
             <li>Separated by a space, the last element is the one being styled</li>
@@ -419,7 +402,7 @@ Add Content Here
         </ul>
     </div>
     
-    <div>
+    <div class="column" >
         <h1>Child Selectors</h1>
         <ul>
             <li>Uses the > combinator to specify children</li>
@@ -430,7 +413,7 @@ Add Content Here
         </ul>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Adjacent Sibling Selectors</h1>
         <ul>
             <li>The + combinator specifies the first sibling tag following the root</li>
@@ -440,7 +423,7 @@ Add Content Here
         </ul>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>General Sibling Selectors</h1>
         <ul>
             <li>The ~ combinator specifies all siblings tags following the root</li>
@@ -448,7 +431,7 @@ Add Content Here
             <li>h1 ~ h2 will select all sibling h2 tags that follow an h1</li>
         </ul>
     </div>
-    <div>
+    <div class="column" >
         <h1>Attribute Selectors</h1>
         <ul>
             <li>You can also select elements by what the element contains</li>
@@ -468,10 +451,8 @@ Add Content Here
             </li>
         </ul>
     </div>
-</section>
 
-<section>
-    <div>
+    <div class="column" id="rules">
         <h1>Rule Order & Specificity</h1>
         <p>When a style declaration is found to be in conflict with a previously declared style, there is a method for determining which one will win out. The process is built into every web browser, and almost all of them calculate the values identically (for once!).</p>
         <p>Here is how the W3C defines the process by which style order is determined:</p>
@@ -489,7 +470,7 @@ Add Content Here
         <p><b>Specificity</b> is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of adding values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.</p>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>Ruleset for Specificity</h1>
         <p>Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.</p>
         <ol>
@@ -512,7 +493,7 @@ Add Content Here
         </ul>
     </div>
 
-    <div>
+    <div class="column" >
         <h1>!important rule</h1>
         <ul>
             <li>This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
@@ -522,16 +503,15 @@ Add Content Here
         </ul>
     </div>
 
-</section>
-
-<section>
-    <h1>To Do</h1>
-    <ul>
-        <li>Download, review, and complete the homework assignment from D2L</li>
-        <li>Find a partner for your homework.</li>
-        <li>Practice using advanced CSS selectors</li>
-    </ul>
-</section>
+    <div class="column" id="todo" >
+        <h1>To Do</h1>
+        <ul>
+            <li>Download, review, and complete the homework assignment from D2L</li>
+            <li>Find a partner for your homework.</li>
+            <li>Practice using advanced CSS selectors</li>
+        </ul>
+    </div>
+    
 
 <div class="go-back">  
 <p><a href="lesson.html"> Back to Lessons Page</a></p>
