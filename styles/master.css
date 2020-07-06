@@ -479,6 +479,26 @@ p {
     grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve ";
   }
 }
+fieldset {
+  margin: 0 auto;
+  padding: 2em 0;
+  width: 85%;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+form label {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+input {
+  height: 30px;
+}
+
 header {
   width: 100%;
   margin: 0 auto;
@@ -620,7 +640,8 @@ nav a:hover::before {
 .wrapper-home,
 .wrapper-schedule,
 .wrapper-lesson,
-.wrapper-about {
+.wrapper-about,
+.wrapper-contact {
   width: 100%;
   max-width: 1220px;
   margin: 0 auto;
