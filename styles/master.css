@@ -594,6 +594,60 @@ textarea:focus {
     width: 50%;
   }
 }
+.column {
+  display: block;
+  text-align: left;
+  padding: 5px;
+}
+
+.column:nth-of-type(even) {
+  background: #FBE8A6;
+}
+
+main {
+  border: solid 2px #303c6c;
+}
+
+.column h1, h2 {
+  padding: 5px;
+}
+
+.column h2 {
+  background-color: #303c6c;
+  color: #FBE8A6;
+  padding: 5px;
+  margin: initial;
+}
+
+.column a {
+  text-decoration: none;
+  color: #303c6c;
+  text-shadow: burlywood;
+  font-size: large;
+  font-weight: bold;
+}
+
+code {
+  display: block;
+  background-color: white;
+  padding: 5px;
+}
+
+.imgs {
+  display: inline-block;
+}
+
+.imgs img {
+  float: left;
+  padding-right: 10px;
+}
+
+@media (max-width: 420px) {
+  .imgs img {
+    float: left;
+    max-width: 45%;
+  }
+}
 header {
   width: 100%;
   margin: 0 auto;
