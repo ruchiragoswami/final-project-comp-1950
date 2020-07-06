@@ -62,7 +62,7 @@ footer {
       padding:0;
       font-size: 1em;
       display: grid;
-      grid-template-columns: 1fr 1fr 1.5fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
       // flex-wrap: wrap;
     }
@@ -81,8 +81,5 @@ footer {
     //   grid-template-columns: 2fr 1fr;
     }
 
-    // .three-cols a {
-    //   //width: 33%;
-    // }
-
+    
   }

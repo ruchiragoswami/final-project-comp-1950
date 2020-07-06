@@ -7,9 +7,18 @@
 .wrapper-about
  {
     width: 100%;
-    max-width: 1120px;
+    max-width: 1220px;
     margin: 0 auto;
+    background-color: $brandColor5;
     // padding: 0.25em;
+    
+}
+
+
+.wrapper-home {
+    // border: 2px solid red;
+    // padding: 0 1%;
+    // width: 98%;
 }
 
 
@@ -17,3 +26,16 @@
     padding: 0.25em;
 }
 
+.wrapper-schedule {
+    
+}
+
+
+@media (min-width: 740px) {
+    .wrapper-schedule {
+        // height: 100%;
+        // border: 2px solid red;
+        // margin-bottom: 100px;
+        // padding-bottom: 0;
+    }
+}

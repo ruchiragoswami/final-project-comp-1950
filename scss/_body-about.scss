@@ -3,6 +3,8 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+
+
 .row {
     border: 2px solid $brandColor1;
     text-align: left;
@@ -29,6 +31,14 @@
     list-style-type: none;
 }
 
+table th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {background-color: #f2f2f2;}
+
+
 @media (min-width: 720px) {
 
     .row {
@@ -38,7 +48,8 @@
     }
 
     .course-info {
-        // margin:0;
+        // border: 2px solid red;
+        margin-bottom: 0.5em;;
         // padding:0;
         background-color: $wrapperBgColor;
         // color: 
@@ -69,7 +80,7 @@
 
     .evaluation {
         grid-area: four;
-        background-color: $brandColor2;
+        // background-color: $brandColor2;
     }
 
     .idecor {

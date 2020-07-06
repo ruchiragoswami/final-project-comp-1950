@@ -20,18 +20,20 @@
 
 
 @media (min-width: 720px) {
-    main {
-        // padding-top: 3em;
-        // padding-bottom: 6em;
-        padding: 3em 1em 6em;
-    }
+    
     
    .les {
        margin:0;
    } 
 
+   .les:hover  {
+        transform: scale(0.9);
+        border: 1px solid $brandColor3; 
+    }
+
 .les-container {
     margin:0;
+    padding: 3em 1em 6em;
     display: grid;
     grid-gap: 0.4em;
     grid-template-columns: 1fr 1fr 1fr ;

@@ -11,7 +11,7 @@ body {
     font-size: 100%;
     // font-weight: 500;
     margin:0 auto;
-    /* padding:0 auto; */
+    //  padding:0 auto; 
     // font-family: Raleway;
     text-align: center;
 
@@ -28,7 +28,7 @@ body {
     // background-color: $brandColor1;
     color: $brandColor1;
     // margin: 0 auto;
-    padding: 0.9em ;
+    // padding: 0.9em ;
     // border: 2px solid gold;
 }
 
@@ -58,23 +58,34 @@ h2 {
     // margin: 2px; 
     // padding-right: 0;
     border: 2px solid $brandColor1;
-    width: 100%;
+    width: 95%;
     line-height: 1.2em;
     font-size:  1.2em;
 }
 
 .box {
     border: 2px solid $brandColor1;
-    width: 100%;
+    width: 70%;
     line-height: 1.4em;
     font-size:  0.8em;
     // align-items: center;;
     margin: 0 auto;
     margin-top: 1em;
     background-color:$brandColor2;
+
+    
 }
 
+.box  {
+    @include intlink;
+    font-size:  0.8em;
 
+}
+
+.box p a {
+    font-size: 1.4em;
+    font-weight: 800;
+}
 .decor {
     display: none;
     
@@ -99,9 +110,9 @@ article {
 
 @media (min-width :740px) { 
 
-    body {
-        padding: 0.5em;
-    
+    .wrapper-home {
+        width: 100%;
+        // margin: 0.2em;
     }
     .utube {
         display: block;
@@ -127,6 +138,10 @@ article {
         // height: 100%;
         // height: auto;
         border: 2px solid $brandColor1;
+    }
+
+    .box {
+        width: 100%;
     }
 
     //  .tile {
@@ -212,3 +227,10 @@ article {
 
 
 
+@media (min-width: 920px) {
+    body { 
+        background-image: url(/images/bck-grnd.png);
+        background-attachment: fixed;
+        background-repeat: repeat;
+    }
+}
