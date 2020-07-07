@@ -282,6 +282,7 @@ p {
   text-align: center;
   margin: 0.5em;
   color: #303c6c;
+  padding-bottom: 0.5em;
 }
 
 .agenda ul {
@@ -621,6 +622,7 @@ main {
 
 .column h1, h2 {
   padding: 5px;
+  font-size: 1.5em;
 }
 
 .column h2 {
@@ -662,10 +664,19 @@ code {
   background-color: #303c6c;
 }
 
+@media (max-width: 620px) {
+  .column h1 {
+    font-size: 1.1em;
+  }
+}
 @media (max-width: 420px) {
   .imgs img {
     float: left;
     max-width: 45%;
+  }
+
+  .column h1 {
+    font-size: 1em;
   }
 }
 header {

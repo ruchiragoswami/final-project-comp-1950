@@ -39,7 +39,7 @@
     <div class="column" >
         <h1 id="c1">Agenda</h1>
         <ul id="d1">
-            <li><a href="#refer" >Referencing Stylesheets</a></a></li>
+            <li><a href="#refer" >Referencing Stylesheets</a></li>
             <li><a href="#import" >Importing</a></li>
             <li><a href="#fonts" >Fonts</a></li>
             <li><a href="#compact" >Compact CSS</a></li>
@@ -64,7 +64,7 @@
         </ul>
 
         <code>
-            &ltlink	rel="stylesheet" <br />
+            &lt;link	rel="stylesheet" <br />
                 href="http://www.mysite.com/css/styles.css" <br />
                 type="text/css" <br />
                 title="Main Style" <br />
@@ -124,8 +124,8 @@
         <div id="d6">
         <p>Persistent styles apply in all cases, even when alternate styles are chosen.</p>
         <code>
-            &lt!-- rel="stylesheet" with NO title="" --><br />
-            &ltlink	rel="stylesheet" <br />
+            &lt;!-- rel="stylesheet" with NO title="" --><br />
+            &lt;link	rel="stylesheet" <br />
             href="css/persistent_styles.css" /><br />
         </code>
         </div>
@@ -136,8 +136,8 @@
         <div id="d7">
         <p>Preferred styles will be the default, but will be replaced if alternate styles are chosen.</p>
         <code>
-            &lt!-- rel="stylesheet" AND a title="" --><br />
-            &ltlink	rel="stylesheet" <br />
+            &lt;!-- rel="stylesheet" AND a title="" --><br />
+            &lt;link	rel="stylesheet" <br />
             href="css/default_styles.css"<br />
             title="Standard Styling"	/><br />
         </code>
@@ -149,8 +149,8 @@
         <div id="d8">
         <p>Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a title="".</p>
         <code>
-            &lt!-- use rel="alternate stylesheet" for alternative stylesheets... --><br />
-            &ltlink	rel="alternate stylesheet"<br /> 
+            &lt;!-- use rel="alternate stylesheet" for alternative stylesheets... --><br />
+            &lt;link	rel="alternate stylesheet"<br /> 
             href="css/large_text.css"<br />
             title="Large Text Styles" /><br />
         </code>
@@ -162,11 +162,11 @@
         <div id="d9">
         <p>If more than one link tag shares the same title="" then they will be grouped together.</p>
         <code>
-            &lt!-- group stylesheets with shared title="" --><br />
-            &ltlink	rel="alternate stylesheet" <br />
+            &lt;!-- group stylesheets with shared title="" --><br />
+            &lt;link	rel="alternate stylesheet" <br />
                 href="css/monchrome_layout.css"<br />
                 title="Monochrome Styles"	/><br />
-            &ltlink	rel="alternate stylesheet" <br />
+            &lt;link	rel="alternate stylesheet" <br />
                 href="css/monchrome_fonts.css"<br />
                 title="Monochrome Styles" 	/><br />
         </code>
@@ -177,8 +177,8 @@
     <div class="column" id="import" >
         <h1 id="c10">@import: Managing Multiple CSS Files</h1>
         <div id="d10">
-        <p>You can use the @import method to import multiple stylesheets from a basic stylesheet that you link to. This will reduce the clutter that can sometimes occur within the &lthead> section.
-            It is also a great place to be able to manage your CSS. From your main document, create a &ltlink> to your styles.css page.</p>
+        <p>You can use the @import method to import multiple stylesheets from a basic stylesheet that you link to. This will reduce the clutter that can sometimes occur within the &lt;head> section.
+            It is also a great place to be able to manage your CSS. From your main document, create a &lt;link> to your styles.css page.</p>
         <p>In the body of the styles.css file, import as many files as you need:</p>
         <ul>
             <li>@import url("css/type.css");</li>
@@ -220,10 +220,10 @@
     <div class="column" >
         <h1 id="c13">Third Party Font Server</h1>
         <div id="d13">
-        <p>Browse the font server site, select the fonts you like and they wil provide you with code for a <link /> tag to add to your HTML. You can then use the font in your CSS.</p>
+        <p>Browse the font server site, select the fonts you like and they wil provide you with code for a &lt;link /> tag to add to your HTML. You can then use the font in your CSS.</p>
         <code>
-            &lt!-- add the link tag to the HTML --><br />
-            &ltlink href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" />	<br />
+            &lt;!-- add the link tag to the HTML --><br />
+            &lt;link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" />	<br />
 
             /* use the font in the CSS */<br />
             selector{<br />
@@ -315,7 +315,7 @@
         <ul id="d18">
             <li>As well as grouping Elements, you can also group classes</li>
             <li>Define several classes: .cool{ color:red; } .wicked { border:1px solid black; }</li>
-            <li>Assign several classes at once: &ltp class="cool wicked"> will select both the cool and wicked classes</li>
+            <li>Assign several classes at once: &lt;p class="cool wicked"> will select both the cool and wicked classes</li>
             <li>The order of the attribute values is irrelevant</li>
             <li>Case is important! Remember to use a single rule for CSS naming and stick with it</li>                       
         </ul>
@@ -522,7 +522,7 @@
                 /* id=0 class=0 HTML=1 --> specificity = 001 */
             </li>
         </ul>
-    </p>
+    <!-- </p> -->
     </div>
     </div>
 
@@ -553,37 +553,42 @@
 
 </main>
 
+<footer>
+   
+    <div class="three-cols">
+        <p> 
+            British Columbia Insititute of Technology <br> 
+            3700 Willingdon Avenue <br> 
+            Burnaby, British Columbia <br> 
+            Canada V5G 3H2  <br> 
+
+        </p>
+    </div> <!-- end three-cols -->
+
+    <div class="three-cols"> 
+         <p>    Telephone: 604-434-5734 <br>
+            Toll-free (Can/Us) : 1-866-434-1610
+        </p>  
+    </div> <!-- end three-cols -->
+
+    <div class="three-cols"> 
+        Follow us on: <br>
+
+        <div class="foot"> 
+            <!-- Add font awesome icons -->
+            <a href="#0" class="fa fa-facebook"></a>
+            <a href="#0" class="fa fa-twitter"></a>
+            <a href="#0" class="fa fa-instagram"></a>
+            <a href="#0" class="fa fa-linkedin"></a>
+        </div>  <!-- end foot -->
+    </div> <!-- end three-cols -->
+
+</footer>
+    
 
 
-        <footer>   
-            <div class="three-cols">
-                <p> 
-                    British Columbia Insititute of Technology <br>
-                    3700 Willingdon Avenue <br> 
-                    Burnaby, British Columbia <br> 
-                    Canada V5G 3H2  <br> 
-        
-                </p>
-            </div> <!-- end three-cols -->
-        
-            <div class="three-cols"> 
-                 <p>    Telephone: 604-434-5734 <br>
-                    Toll-free (Can/Us) : 1-866-434-1610
-                </p>  
-            </div> <!-- end three-cols -->
-        
-            <div class="three-cols"> 
-                Follow us on: <br>
-        
-                <!-- Add font awesome icons -->
-                <a href="#0" class="fa fa-facebook"></a>
-                <a href="#0" class="fa fa-twitter"></a>
-                <a href="#0" class="fa fa-instagram"></a>
-                <a href="#0" class="fa fa-linkedin"></a>
-        
-            </div> <!-- end three-cols -->
-        
-        </footer>
+
+    </div>        <!-- end wrapper-lesson  -->
 
 
 

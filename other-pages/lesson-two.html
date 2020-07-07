@@ -57,7 +57,7 @@
         <h1 id="c3">Assign Character Set</h1>
         <div id="d3"> 
         <p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page: </p>
-        <strong>&ltmeta charset="utf-8" /></strong>
+        <strong>&lt;;meta charset="utf-8" /></strong>
         <ul>
             <li>Write all your text-based code (.html, .css, .js, .php, etc) in UTF-8. At development time, ensure your text editor is saving files in this format. This setting is usually found in the application's Preferences menu option.</li>
             <li>Unless your audience includes very old browsers, you can code special characters directly into the HTML (you dont need to use HTML entities for most special characters).</li>
@@ -117,66 +117,66 @@
         <ul  id="d8">
             <li>All elements must be properly nested
                 <ul>
-                    <li>This is not valid: &ltp>&ltb>Bolded Text&lt/p>&lt/b></li>
-                    <li>This can be a problem with things like Lists &ltol> and &ltul>.</li>
-                    <li>Especially when closing the List Item &ltli> tag that contains the &ltul> or &ltol> tag.</li>
+                    <li>This is not valid: &lt;p>&lt;b>Bolded Text&lt;;/p>&lt;;/b></li>
+                    <li>This can be a problem with things like Lists &lt;ol> and &lt;;ul>.</li>
+                    <li>Especially when closing the List Item &lt;;li> tag that contains the &lt;;ul> or &lt;;ol> tag.</li>
                     
                 </ul>
             </li>
             <li>All tags must close
                 <ul>
-                    <li>Example: &ltp>Some text here&lt/p></li>
-                    <li>Empty Elements are closed as well: &ltbr /> or &ltimg src="#" /></li>
+                    <li>Example: &lt;;p>Some text here&lt;;/p></li>
+                    <li>Empty Elements are closed as well: &lt;;br /> or &lt;;img src="#" /></li>
                     <li>An extra space is required before the slash to work with all browsers.</li>
                 </ul>
             </li>
             <li>All tag names must be in lower case
                 <ul>
-                    <li>&ltImg Src="some_image.gif"> is not valid</li>
+                    <li>&lt;;Img Src="some_image.gif"> is not valid</li>
                 </ul>
             </li>
             <li>Attribute names are always in lower case
                 <ul>
-                    <li>&ltp ALIGN="center"> should be &ltp align="center"></p></li>
+                    <li>&lt; ALIGN="center"> should be &lt;p align="center"> &lt;/p></li>
                 </ul>
             </li>
             <li>All attributes must be quoted
                 <ul>
-                    <li>&ltbody bgcolor=black> will not work, you need: &ltbody bgcolor="black"></body></li>
+                    <li>&lt;body bgcolor=black> will not work, you need: &lt;body bgcolor="black"> &lt;/body></li>
                 </ul>
             </li>
             <li>Attributes cannot be minimized
                 <ul>
-                    <li>&ltinput type="checkbox" checked> cannot be used. The valid code is: &ltinput type="checkbox" checked="checked" /></li>
+                    <li>&lt;;input type="checkbox" checked> cannot be used. The valid code is: &lt;;input type="checkbox" checked="checked" /></li>
                 </ul>
             </li>
             <li>Name Attribute is no longer used (except with forms). Replace "name" with "id".
                 <ul>
-                    <li>&ltimg src="picture.gif" name="myimage" /> will not validate. Use id="myimage" instead.</li>
+                    <li>&lt;;img src="picture.gif" name="myimage" /> will not validate. Use id="myimage" instead.</li>
                 </ul>
             </li>
 
             <li>Mandatory Elements: Every XHTML document must have these elements:
                 <ul>
-                    <li>&lthtml></li>
-                    <li>&lthead></li>
-                    <li>&lttitle></li>
-                    <li>&ltbody></li>
-                    <li>The &lt!DOCTYPE> declaration must be there, but it is part of the document itself rather than an element of the document.</li>                                
+                    <li>&lt;html></li>
+                    <li>&lt;head></li>
+                    <li>&lt;title></li>
+                    <li>&lt;body></li>
+                    <li>The &lt;!DOCTYPE> declaration must be there, but it is part of the document itself rather than an element of the document.</li>                                
                 </ul>
             </li>
             <li>Documents must be well-formed
                 <ul>
-                    The document must conform to all of the above rules
+                   <li>  The document must conform to all of the above rules </li>
                 </ul>
             </li>
             <li>Optional XML declaration
                 <ul>
                     <li>Not required, but good practice:</li>
-                    <li>&lt?xml version="1.0" encoding="ISO-8859-1"?></li>
+                    <li>&lt;;?xml version="1.0" encoding="ISO-8859-1"?></li>
                 </ul>
             </li>
-            <li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header: &ltmeta http-equiv="Content-Type" content="text/html" charset="UTF-8"></li>                        
+            <li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header: &lt;;meta http-equiv="Content-Type" content="text/html" charset="UTF-8"></li>                        
         </ul>
     </div>
 
@@ -187,7 +187,7 @@
         HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions.</p>
         Significant features include:
         <ul>
-            <li>Ultra simple Doctype: &lt!DOCTYPE html></li>
+            <li>Ultra simple Doctype: &lt;;!DOCTYPE html></li>
             <li>Specifies how browsers should behave with imperfect code</li>
             <li>Ability to embed XML, MathML or SVG markup.</li>
             <li>Standardized Javascript API increases client side script compatibility across browsers</li>
@@ -204,15 +204,15 @@
         <p>Common developer practices have been simplified</p>
         <ul>
             <li>Finally a DOCTYPE we can all remember:<br />
-                &lt!DOCTYPE html></li>
+                &lt;;!DOCTYPE html></li>
             <li>Declaring the character encoding is easier:<br />
-                &ltmeta charset="utf-8"></li>
+                &lt;;meta charset="utf-8"></li>
             <li>When linking to external stylesheets the type attribute is not required:<br />
-                &ltlink rel="stylesheet" href="style.css" /></li>
+                &lt;;link rel="stylesheet" href="style.css" /></li>
             <li>When embedding CSS the type attribute is not required:<br />
-                &ltstyle>&lt/style></li>
+                &lt;;style>&lt;;/style></li>
             <li>Including javascripts is simplified as well (type attribute is not required)
-                &ltscript src="javascripts.js">&lt/script></li>
+                &lt;;script src="javascripts.js">&lt;;/script></li>
         </ul>
     </div>    
     </div>
@@ -223,16 +223,16 @@
         <p>It is crucial for all HTML content to be semantically marked up. This is how browsers, search engines, and screen readers make sense of online content.
             HTML5 provides more than just adjustments to the markup, there are new, powerfully semantic elements: </p>
         <ul>
-            <li>&ltsection> is a tag representing a document or application section. in general, if you are planning to use a heading, start a new section. a section must contain a heading, and may contain article(s), possibly asides or even sub-sections</li>
-            <li>&ltarticle> is an independent piece of content in a document (it could stand alone if removed from the page). an article might be a blog post, forum thread, news story, collection of product information, etc</li>
-            <li>&ltaside> is for content "only slightly" related to the main page content. asides fill the role of a sidebar. if the content could be removed without reducing the meaning of the main content of the HTML document, then use an aside</li>
-            <li>&ltheader> and &ltfooter> are for the header or footer of a page</li>
-            <li>&ltnav> represents an area for navigation</li>
-            <li>&ltmain> used for containing content that is focused on the central topic of the page. this content is usually unique to the page, and not shared by other pages (main will usually NOT contain navigations, footers, sidebars, etc)</li>
-            <li>&ltfigure> will likely contain an img or graphic. self-contained content (could usually be removed from the page and stand on its own). allows for captioning of embedded content like an image graphic or video. if you want to associate a caption, add a figcaption child</li>
-            <li>&ltfigcaption> used as first or last child of figure to define the caption or legend for a figure</li>
+            <li>&lt;;section> is a tag representing a document or application section. in general, if you are planning to use a heading, start a new section. a section must contain a heading, and may contain article(s), possibly asides or even sub-sections</li>
+            <li>&lt;;article> is an independent piece of content in a document (it could stand alone if removed from the page). an article might be a blog post, forum thread, news story, collection of product information, etc</li>
+            <li>&lt;;aside> is for content "only slightly" related to the main page content. asides fill the role of a sidebar. if the content could be removed without reducing the meaning of the main content of the HTML document, then use an aside</li>
+            <li>&lt;;header> and &lt;;footer> are for the header or footer of a page</li>
+            <li>&lt;;nav> represents an area for navigation</li>
+            <li>&lt;;main> used for containing content that is focused on the central topic of the page. this content is usually unique to the page, and not shared by other pages (main will usually NOT contain navigations, footers, sidebars, etc)</li>
+            <li>&lt;;figure> will likely contain an img or graphic. self-contained content (could usually be removed from the page and stand on its own). allows for captioning of embedded content like an image graphic or video. if you want to associate a caption, add a figcaption child</li>
+            <li>&lt;;figcaption> used as first or last child of figure to define the caption or legend for a figure</li>
         </ul>
-        <p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many div tags. eg: instead of the typical &ltdiv id="header">, use &ltheader>.</p>
+        <p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many div tags. eg: instead of the typical &lt;;div id="header">, use &lt;;header>.</p>
         <p>Having trouble deciding which tag to use for what content? Try this HTML5 flowchart.</p>
         </div>
     </div>
@@ -242,11 +242,11 @@
         <div id="d12"> 
         <p >HTML5 also brings a few notable semantic alterations to older tags: </p>
         <ul>
-            <li>&lta> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
-            <li>&ltsmall> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the big element has been deprecated</li>
-            <li>&ltb> no longer means 'render bold'. now it means the text is 'stylisticly offset from the normal text', without conveying any extra importance. to convey extra importance, use &ltstrong></strong></li>
-            <li>&lti> now means the text is 'in an alternate voice or mood', without conveying any extra emphasis. to convey extra emphasis, use &ltem></em></li>
-            <li>Deprecated tags: &ltbig>, &ltfont>, &ltstrike>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
+            <li>&lt;;a> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
+            <li>&lt;;small> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the big element has been deprecated</li>
+            <li>&lt;b> no longer means 'render bold'. now it means the text is 'stylisticly offset from the normal text', without conveying any extra importance. to convey extra importance, use &lt;strong> &lt;/strong></li>
+            <li>&lt;i> now means the text is 'in an alternate voice or mood', without conveying any extra emphasis. to convey extra emphasis, use &lt;em> &lt;/em></li>
+            <li>Deprecated tags: &lt;big>, &lt;font>, &lt;strike>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
             <li>Deprecated attributes: align, bgcolor, border, height, size, type, width and more. Developers should use CSS instead of these deprecated attributes.</li>
         </ul>
         </div>
@@ -271,9 +271,9 @@
     <div class="column p15" >
         <h1 id="c15">Sectioning Content</h1>
         <div id="d15"> 
-        <p>The &ltsection> tag can be used to semantically group content. It can remove ambiguity when a page is being processed by the browser, a screen reader, or search engine.</p>
+        <p>The &lt;section> tag can be used to semantically group content. It can remove ambiguity when a page is being processed by the browser, a screen reader, or search engine.</p>
         <p>For example, imagine you have created the following code:<br />
-            Since content that follows a heading is presumed to be associated with that heading, the code above carries plenty of semantic value already. But, if the small tag's content is intended to apply to all cities, a browser has no way of knowing that. It will instead assume the small tag is associated with the preceding heading (&lth3>Tokyo&lt/h3>)</p>
+            Since content that follows a heading is presumed to be associated with that heading, the code above carries plenty of semantic value already. But, if the small tag's content is intended to apply to all cities, a browser has no way of knowing that. It will instead assume the small tag is associated with the preceding heading (&lt;h3>Tokyo&lt;/h3>)</p>
         <p>Use the section tag to explicitly demarcate the start and end of the related content:</p>
         <p>This new sectioning will inform the browser that the small is associated with the h1</p>
         <p>In HTML5, each piece of sectioned content has its own self-contained outline. This means you wont need to worry as much about which level heading tag to use. You can use an h1 inside a section and it will be treated as the heading of the section, and have lesser semantic impact than an h1 that is at a higher level.</p>
@@ -288,7 +288,7 @@
             <li><b>placeholder="value":</b> prepopulates field with data</li>
             <li><b>autofocus="autofocus":</b> sets the input to have cursor focus</li>
             <li><b>required="required":</b> ensures field is filled in before submission</li>
-            <li>There are also several new &ltinput> type attribute variants:
+            <li>There are also several new &lt;input> type attribute variants:
                 <ul>
                     <li><b>type="email":</b> checkes for the pattern of emails</li>
                     <li><b>type="url":</b> web addesses</li>
@@ -309,15 +309,15 @@
         <div id="d17"> 
         <p>Scaleable Vector Graphics (SVG) can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent. </p>
         <p>You can use SVG graphics with the img tag, just as with raster graphics. You can also use .svg as a CSS background-image.</p>
-        <p>&ltimg src="images/logo.svg" alt="COMP 1950 logo" /></p>
+        <p>&lt;img src="images/logo.svg" alt="COMP 1950 logo" /></p>
         <p>The png on the left is 26KB. The .svg on the right is only 4KB.</p>
         <div class="imgs" >
             <img src="../images/comp1950_logo.png" alt="logo in png" />
             <img src="../images/comp1950_logo.svg" alt="logo in svg" />   
         </div>
         <p>Alternatively, you can use SVG code 'inline' with the svg tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your .html code. Just copy the source code from your .svg file and paste it directly into your .html!</p>
-        <code>&ltsvg viewBox="0 0 55 28"><br />
-            &lt!-- svg code goes here... sometimes there is a LOT of code here! -->&lt/svg></code><br />
+        <code>&lt;svg viewBox="0 0 55 28"><br />
+            &lt;!-- svg code goes here... sometimes there is a LOT of code here! -->&lt;/svg></code><br />
         <h2>SVG Tools</h2>
         <p>Use an SVG application to help you create and manipulate your SVG code.</p>
         <ul>
@@ -342,11 +342,11 @@
         </ul>
 
         <code>
-            &ltaudio controls="controls"><br />
-            &ltsource src="media/house-a-square.mpg" type="audio/mpeg" /><br />
-            &ltsource src="media/house-a-square.mp3" type="audio/mp3" /><br />
-            &ltsource src="media/house-a-square.ogg" type="audio/ogg" /><br />
-            &lt/audio>
+            &lt;audio controls="controls"><br />
+            &lt;source src="media/house-a-square.mpg" type="audio/mpeg" /><br />
+            &lt;source src="media/house-a-square.mp3" type="audio/mp3" /><br />
+            &lt;source src="media/house-a-square.ogg" type="audio/ogg" /><br />
+            &lt;/audio>
         </code><br />
 
         <audio controls="controls">
@@ -373,14 +373,14 @@
         </ul>
 
         <code>
-            &ltvideo 	preload="none" <br />
+            &lt;video 	preload="none" <br />
                 controls="controls" <br />
                 poster="media/poster-bear-in-water.jpg"><br />
                 
-                &ltsource src="media/bear-in-water.webm" type="video/webm" /> <br />
-                &ltsource src="media/bear-in-water.mp4" type="video/mp4" /><br />
-                &ltsource src="media/bear-in-water.ogg" type="video/ogg" /><br />
-                &lt/video>	
+                &lt;source src="media/bear-in-water.webm" type="video/webm" /> <br />
+                &lt;source src="media/bear-in-water.mp4" type="video/mp4" /><br />
+                &lt;source src="media/bear-in-water.ogg" type="video/ogg" /><br />
+                &lt;/video>	
         </code>
 
         <video 	preload="none" 
@@ -401,8 +401,8 @@
             <li>Try the HTML5Test to test a specific browser.</li>
             <li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:
                 <ul>
-                    <li><code>&ltscript>document.createElement("article");&lt/script></code></li>
-                    <li>This creates an element called <article> which the browser (IE, in this case) can understand and style appropriately</li>
+                    <li><code>&lt;script>document.createElement("article");&lt;/script></code></li>
+                    <li>This creates an element called &lt;article> which the browser (IE, in this case) can understand and style appropriately</li>
                 </ul>
             </li>
             <li>Creating an entry for every element can get a bit heavy, so you can use the HTML5shiv script written by Remy Sharp. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:</li>
@@ -419,7 +419,7 @@
             <li>Review the HTML5 semantic tags, know how and when to use them to maxmize the semantic strucure of your HTML</li>
         </ul>
     </div>
-</section>
+<!-- </section> -->
 
 <div class="go-back p20">  
 <p><a href="lesson.html"> Back to Lessons Page</a></p>
@@ -428,37 +428,42 @@
 
 </main>
 
+<footer>
+   
+    <div class="three-cols">
+        <p> 
+            British Columbia Insititute of Technology <br> 
+            3700 Willingdon Avenue <br> 
+            Burnaby, British Columbia <br> 
+            Canada V5G 3H2  <br> 
+
+        </p>
+    </div> <!-- end three-cols -->
+
+    <div class="three-cols"> 
+         <p>    Telephone: 604-434-5734 <br>
+            Toll-free (Can/Us) : 1-866-434-1610
+        </p>  
+    </div> <!-- end three-cols -->
+
+    <div class="three-cols"> 
+        Follow us on: <br>
+
+        <div class="foot"> 
+            <!-- Add font awesome icons -->
+            <a href="#0" class="fa fa-facebook"></a>
+            <a href="#0" class="fa fa-twitter"></a>
+            <a href="#0" class="fa fa-instagram"></a>
+            <a href="#0" class="fa fa-linkedin"></a>
+        </div>  <!-- end foot -->
+    </div> <!-- end three-cols -->
+
+</footer>
+    
 
 
-        <footer>   
-            <div class="three-cols">
-                <p> 
-                    British Columbia Insititute of Technology <br>
-                    3700 Willingdon Avenue <br> 
-                    Burnaby, British Columbia <br> 
-                    Canada V5G 3H2  <br> 
+    </div>      <!-- end wrapper-lesson -->
         
-                </p>
-            </div> <!-- end three-cols -->
-        
-            <div class="three-cols"> 
-                 <p>    Telephone: 604-434-5734 <br>
-                    Toll-free (Can/Us) : 1-866-434-1610
-                </p>  
-            </div> <!-- end three-cols -->
-        
-            <div class="three-cols"> 
-                Follow us on: <br>
-        
-                <!-- Add font awesome icons -->
-                <a href="#0" class="fa fa-facebook"></a>
-                <a href="#0" class="fa fa-twitter"></a>
-                <a href="#0" class="fa fa-instagram"></a>
-                <a href="#0" class="fa fa-linkedin"></a>
-        
-            </div> <!-- end three-cols -->
-        
-        </footer>
 
         <script src="/scripts/toggle.js"></script>
 

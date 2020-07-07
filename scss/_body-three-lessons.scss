@@ -25,6 +25,7 @@ main{
     // background-color: #303c6c;
     // color: #FBE8A6;
     padding: 5px;
+    font-size: 1.5em;
 }
 
 .column h2{
@@ -62,121 +63,23 @@ code{
     @include intlink;
 }
 
+@media (max-width: 620px) {
+    .column h1 {
+        font-size: 1.1em;
+    }
+}
+
+
 @media (max-width: 420px) {
     .imgs img{
         float: left;
         max-width: 45%;
     }
+    .column h1 {
+        font-size: 1em;
+    }
+
 }
 
 
 
-// @media (min-width:750px) {
-//     main {
-//         width: 100%;
-//         display:grid;
-//         grid-gap: 10px;
-//         grid-template-columns: 1fr 1fr;
-//         grid-auto-rows: minmax(100px, auto) ;
-//         grid-template-areas: " one two" 
-//                                 " three  four"
-//                             // "three three"
-//                             "five five "
-//                             "six six"
-//                             "seven eight"
-//                             "nine nine"
-//                             "ten eleven"
-//                             "twelve twelve"
-//                             "thirteen fourteen"
-//                             "fifteen fifteen"
-//                             "sixteen seventeen"
-//                             "eighteen eighteen"
-//                             "nineteen  twenty"
-        
-//             ;
-//     }
-
-//     .p1 {
-//         grid-area: one;
-//     }
-
-//     .p2 {
-//         grid-area:two;
-//     }
-
-//     .p3 {
-//         grid-area: three;
-//     }
-
-//     .p4 {
-//         grid-area: four;
-//     }
-
-
-//     .p5 {
-//         grid-area: five;
-//     }
-
-//     .p6 {
-//         grid-area:six;
-//     }
-
-//     .p7 {
-//         grid-area: seven;
-//     }
-
-//     .p8 {
-//         grid-area: eight;
-//     }
-
-
-//     .p9 {
-//         grid-area: nine;
-//     }
-
-//     .p10 {
-//         grid-area:ten;
-//     }
-
-//     .p11 {
-//         grid-area: eleven;
-//     }
-
-//     .p12 {
-//         grid-area: twelve;
-//     }
-
-
-//     .p13 {
-//         grid-area: thirteen;
-//     }
-
-//     .p14 {
-//         grid-area: fourteen;
-//     }
-
-//     .p15 {
-//         grid-area: fifteen;
-//     }
-
-//     .p16 {
-//         grid-area: sixteen;
-//     }
-
-//     .p17 {
-//         grid-area: seventeen;
-//     }
-
-//     .p18 {
-//         grid-area: eighteen;
-//     }
-
-//     .p19 {
-//         grid-area: nineteen;
-//     }
-    
-//     .p20 {
-//         grid-area: twenty;
-//     }
-
-// }
