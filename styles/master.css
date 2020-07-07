@@ -192,6 +192,16 @@ article {
     background-repeat: repeat;
   }
 }
+.about-banner img {
+  border: 2px solid #303c6c;
+  padding: 0.2em;
+  margin: 0 auto;
+}
+
+.course-info {
+  padding: 0.1em;
+}
+
 .row {
   border: 2px solid #303c6c;
   text-align: left;
@@ -232,6 +242,11 @@ tr:nth-child(odd) {
 }
 
 @media (min-width: 720px) {
+  .about-banner img {
+    border: none;
+    padding: 0;
+  }
+
   .row {
     margin: 0;
     background-color: #CCCCCC;
@@ -239,6 +254,7 @@ tr:nth-child(odd) {
 
   .course-info {
     margin-bottom: 0.5em;
+    padding: 0.5em;
     background-color: white;
     display: grid;
     grid-gap: 0.5em;
