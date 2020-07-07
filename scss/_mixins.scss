@@ -7,9 +7,10 @@
 @mixin intlink {
     a {
     text-decoration: none;
-    // color: ;
+    color: #e6625b ;
    
     
+
    &:hover, 
    &:focus {
         color:#CCCCCC ;

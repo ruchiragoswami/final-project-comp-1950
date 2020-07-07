@@ -34,10 +34,11 @@
 <main> 
 
 <!-- lesson content -->
+<div>  <p class="inform"> Click on the Headings Below </p></div>
 
     <div class="column" >
-        <h1>Agenda</h1>
-        <ul>
+        <h1 id="c1">Agenda</h1>
+        <ul id="d1">
             <li><a href="#refer" >Referencing Stylesheets</a></a></li>
             <li><a href="#import" >Importing</a></li>
             <li><a href="#fonts" >Fonts</a></li>
@@ -49,7 +50,8 @@
     </div>
 
     <div class="column" id="refer">
-        <h1>Referencing CSS</h1>
+        <h1 id="c2">Referencing CSS</h1>
+        <div id="d2">
         <p>When linking to external style sheets, there are a number of features to be aware of:</p>
         <ul>
             <li>Each stylesheet requires it's own link tag</li>
@@ -68,11 +70,12 @@
                 title="Main Style" <br />
                 media="screen" /><br />
         </code>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Media variations: media attribute</h1>
-        <ul>
+        <h1 id="c3">Media variations: media attribute</h1>
+        <ul id="d3">
             <li>media="type" can be a powerful tool</li>
             <li>Examples of media types:
                 <ul>
@@ -93,7 +96,8 @@
     </div>
 
     <div class="column" >
-        <h1>Alternate style sheets: rel attribute</h1>
+        <h1 id="c4">Alternate style sheets: rel attribute</h1>
+        <div id="d4">
         <p>You can also have alternate stylesheets supported</p>
         <ul>
             <li>rel="stylesheet" defines the default stylesheets to use</li>
@@ -103,11 +107,12 @@
             <li>An example would be to create a 'Larger Text' style sheet with everything in a larger font, or providing an option for users to choose an austere, simple page instead of a colorful/image heavy stylesheet</li>
             <li>Many browsers are now giving users the ability to select which sheet they would like to see. (Firefox: View > Page Style)</li>
         </ul>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Alternate style sheets: title attribute</h1>
-        <ul>
+        <h1 id="c5">Alternate style sheets: title attribute</h1>
+        <ul id="d5">
             <li>A stylesheet is "persistent" if it is linked with rel="stylesheet" and has no title attribute. All persistent stylesheets are always used when rendering</li>
             <li>A stylesheet is "preferred" if it is linked with rel="stylesheet" and has a title attribute. these styles will be used as the default. preferred stylesheets with the same title are grouped together</li>
             <li>Finally, a stylesheet is "alternate" if it is linked with rel="alternate stylesheet" and has a title. These stylesheets are supposed to allow the user to choose stylesheets, they are grouped together by title and show up in the browser's stylesheet selector if it has one (View > Page Style in Firefox). Each group (by title) is mutually exclusive.</li>
@@ -115,17 +120,20 @@
     </div>
 
     <div class="column" >
-        <h1>Persistent Styles</h1>
+        <h1 id="c6">Persistent Styles</h1>
+        <div id="d6">
         <p>Persistent styles apply in all cases, even when alternate styles are chosen.</p>
         <code>
             &lt!-- rel="stylesheet" with NO title="" --><br />
             &ltlink	rel="stylesheet" <br />
             href="css/persistent_styles.css" /><br />
         </code>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Preferred Styles</h1>
+        <h1 id="c7">Preferred Styles</h1>
+        <div id="d7">
         <p>Preferred styles will be the default, but will be replaced if alternate styles are chosen.</p>
         <code>
             &lt!-- rel="stylesheet" AND a title="" --><br />
@@ -133,10 +141,12 @@
             href="css/default_styles.css"<br />
             title="Standard Styling"	/><br />
         </code>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Alternate Styles</h1>
+        <h1 id="c8">Alternate Styles</h1>
+        <div id="d8">
         <p>Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a title="".</p>
         <code>
             &lt!-- use rel="alternate stylesheet" for alternative stylesheets... --><br />
@@ -144,10 +154,12 @@
             href="css/large_text.css"<br />
             title="Large Text Styles" /><br />
         </code>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Grouping Stylesheets</h1>
+        <h1 id="c9">Grouping Stylesheets</h1>
+        <div id="d9">
         <p>If more than one link tag shares the same title="" then they will be grouped together.</p>
         <code>
             &lt!-- group stylesheets with shared title="" --><br />
@@ -159,10 +171,12 @@
                 title="Monochrome Styles" 	/><br />
         </code>
         <p>To enable alternate stylesheet switching, you can either apply some javascript to manage the switch with hyperlinks, or use Firefox for alternate stylesheets.</p>
+        </div>
     </div>
 
     <div class="column" id="import" >
-        <h1>@import: Managing Multiple CSS Files</h1>
+        <h1 id="c10">@import: Managing Multiple CSS Files</h1>
+        <div id="d10">
         <p>You can use the @import method to import multiple stylesheets from a basic stylesheet that you link to. This will reduce the clutter that can sometimes occur within the &lthead> section.
             It is also a great place to be able to manage your CSS. From your main document, create a &ltlink> to your styles.css page.</p>
         <p>In the body of the styles.css file, import as many files as you need:</p>
@@ -173,11 +187,12 @@
             
         </ul>
         <p>NOTE: when using the @import directive in an external CSS file, ensure it comes before your CSS selector rules. It might be best to not include any CSS rules in a page that uses @import.</p>
-
+        </div>
     </div>
 
     <div class="column" >
-        <h1>@charset: Assigning CSS Character Set</h1>
+        <h1 id="c11">@charset: Assigning CSS Character Set</h1>
+        <div id="d11">
         <p>If your CSS files only contain standard keyboard characters, assigning the character set is not required. The CSS language itself does not use any exotic characters, so assigning a charset is often omitted. If, however, your CSS needs to use special characters, ensuring the correct character set can be very important. Eg: When using a pseudoclass to add content to HTML content: "Äwesome!"</p>
         <p>If needed, add the @charset rule to the top of the CSS document.</p>
         <code>
@@ -186,10 +201,12 @@
             
             /* CSS rules follow... */<br />
         </code>
+        </div>
     </div>
 
     <div class="column" id="fonts" >
-        <h1>@font-face And Font Servers</h1>
+        <h1 id="c12">@font-face And Font Servers</h1>
+        <div id="d12">
         <p>Fonts that aren't available on the client machine can be provided by a third-party font server or by your website's server.</p>
         <ul>
             <li>Google Fonts</li>
@@ -197,10 +214,12 @@
             <li>Font Squirrel</li>
             <li>Plenty more available online...</li>
         </ul>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Third Party Font Server</h1>
+        <h1 id="c13">Third Party Font Server</h1>
+        <div id="d13">
         <p>Browse the font server site, select the fonts you like and they wil provide you with code for a <link /> tag to add to your HTML. You can then use the font in your CSS.</p>
         <code>
             &lt!-- add the link tag to the HTML --><br />
@@ -212,10 +231,12 @@
             }<br />
         </code>
         <p>No longer stuck with 'Arial', 'Helvetica', 'Georgia' and the rest.</p>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>Serve Fonts From Your Website</h1>
+        <h1 id="c14">Serve Fonts From Your Website</h1>
+        <div id="d14">
         <p>If the font(s) are copyright free, or if you have license to distribute a font, you can serve them yourself using the CSS @font-face directive.
             Different client systems will need fonts in varying formats, so if you are distributing the font yourself, be sure to have the font available in most common formats.</p>
         <ul>
@@ -241,10 +262,12 @@
             }<br />
         </code>
         <p>Don't get carried away with wild font choices. Some fonts have very poor readability, reducing accessibility.</p>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>CSS Measurements</h1>
+        <h1 id="c15">CSS Measurements</h1>
+        <div id="d15">
         <p>In CSS, there are a number of measurement values that can be used in declarations.</p>
 
         <h3>Size measurements</h3>
@@ -269,16 +292,17 @@
             <li>RGB: rgb(255, 0, 255) - This allows the user to specify the same thing as Hex, but in Decimal format</li>
             <li>RGB %: rgb(100%, 0%, 50%) - Almost identical to RGB, but with percentages of each color space instead</li>
         </ul>
+        </div>
     </div>
 
     <div class="column" id="compact" >
-        <h1>Compact CSS Code</h1>
-        <p>When building your CSS rules, there are some easy ways to compact your code, reducing code bloat and filesize.</p>
+        <h1 id="c16">Compact CSS Code</h1>
+        <p id="d16">When building your CSS rules, there are some easy ways to compact your code, reducing code bloat and filesize.</p>
     </div>
 
     <div class="column" id="selectors" >
-        <h1>Grouping selectors</h1>
-        <ul>
+        <h1 id="c17">Grouping selectors</h1>
+        <ul id="d17">
             <li>If you would like to apply the same style to a multitude of different selectors, you can group them with the comma</li>
             <li>h1, h2, h3, h4, h5 { color: red; }</li>
             <li>This can be done with Elements, classes and IDs</li>
@@ -287,8 +311,8 @@
     </div>
 
     <div class="column" >
-        <h1>Grouping comes to Classes</h1>
-        <ul>
+        <h1 id="c18">Grouping comes to Classes</h1>
+        <ul id="d18">
             <li>As well as grouping Elements, you can also group classes</li>
             <li>Define several classes: .cool{ color:red; } .wicked { border:1px solid black; }</li>
             <li>Assign several classes at once: &ltp class="cool wicked"> will select both the cool and wicked classes</li>
@@ -297,7 +321,8 @@
         </ul>
     </div>
     <div class="column" >
-        <h1>Rule Compacting</h1>
+        <h1 id="c19">Rule Compacting</h1>
+        <div id="d19">
         <p>There are a lot of rules that will accept a compacted ruleset:</p>
         <ul>
             <li>margin: top right bottom left;</li>
@@ -340,16 +365,17 @@
         <code>font: italic small-caps bold 1.3em "helvetica", sans-serif; </code>
         <p>or, specify only a select couple.</p>
         <code>font: 1.3em "helvetica", sans-serif;</code>
+        </div>
     </div>
 
     <div class="column" >
-        <h1>CSS Selectors</h1>
-        <p>There are several advanced CSS selector techniques that provide plenty of options for the application of style.</p>
+        <h1 id="c20">CSS Selectors</h1>
+        <p id="d20">There are several advanced CSS selector techniques that provide plenty of options for the application of style.</p>
     </div>
 
     <div class="column" >
-        <h1>Universal Selector</h1>
-        <ul>
+        <h1 id="c21">Universal Selector</h1>
+        <ul id="d21">
             <li>This is a fairly widely supported selector: the asterisk *</li>
             <li>Use it to specify a global rule</li>
             <li>* { color: red; } will make all font color red on your page</li>
@@ -359,7 +385,8 @@
     </div>
 
     <div class="column" >
-        <h1>Pseudo-classes</h1>
+        <h1 id="c22">Pseudo-classes</h1>
+        <div id="d22">
         <p>A Pseudo-class is a selector that allows you to reference a specific action or attribute of an element. This is most often used when specifying a attributes, such as :visited and :link.</p>
         <p>There are other uses for pseudo elements, that will allow for greater detail in styling content, such as :first-letter and :first-line. These allow the browser to apply a style based on an unselected, but displayed element.
             Best part: No span or div required to access these pseudo-elements.</p>
@@ -388,10 +415,11 @@
             </li>
         </ul>
     </div>
+    </div>
 
     <div class="column" >
-        <h1>Descendant Selectors</h1>
-        <ul>
+        <h1 id="c23">Descendant Selectors</h1>
+        <ul id="d23">
             <li>Separated by a space, the last element is the one being styled</li>
             <li>h1 em will apply rules to all em's within an h1</li>
             <li>You can have as many as you want: ul ol ul li</li>
@@ -403,8 +431,8 @@
     </div>
     
     <div class="column" >
-        <h1>Child Selectors</h1>
-        <ul>
+        <h1 id="c24">Child Selectors</h1>
+        <ul id="d24">
             <li>Uses the > combinator to specify children</li>
             <li>Will select an element that is directly descended from another element</li>
             <li>p > strong will only select a strong tag that is inside a paragraph</li>
@@ -414,8 +442,8 @@
     </div>
 
     <div class="column" >
-        <h1>Adjacent Sibling Selectors</h1>
-        <ul>
+        <h1 id="c25">Adjacent Sibling Selectors</h1>
+        <ul  id="d25">
             <li>The + combinator specifies the first sibling tag following the root</li>
             <li>It will not include the root for styling</li>
             <li>div + h2 will select the first sibling h2 following a div tag</li>
@@ -424,16 +452,16 @@
     </div>
 
     <div class="column" >
-        <h1>General Sibling Selectors</h1>
-        <ul>
+        <h1 id="c26">General Sibling Selectors</h1>
+        <ul id="d26">
             <li>The ~ combinator specifies all siblings tags following the root</li>
             <li>It will not select sibling tags that precede the root, nor will it include the root</li>
             <li>h1 ~ h2 will select all sibling h2 tags that follow an h1</li>
         </ul>
     </div>
     <div class="column" >
-        <h1>Attribute Selectors</h1>
-        <ul>
+        <h1 id="c27">Attribute Selectors</h1>
+        <ul id="d27">
             <li>You can also select elements by what the element contains</li>
             <li>The method is: element[attribute=value]</li>
             <li>If you specify an attribute with no value, you will match any element that simply has the attribute present (no matter what it's value is)</li>
@@ -453,7 +481,8 @@
     </div>
 
     <div class="column" id="rules">
-        <h1>Rule Order & Specificity</h1>
+        <h1 id="c28">Rule Order & Specificity</h1>
+        <div id="d28">
         <p>When a style declaration is found to be in conflict with a previously declared style, there is a method for determining which one will win out. The process is built into every web browser, and almost all of them calculate the values identically (for once!).</p>
         <p>Here is how the W3C defines the process by which style order is determined:</p>
         <ul>
@@ -469,10 +498,12 @@
         <p>All of the rules are pretty straightforward, except for Specificity, which bears some explanation.</p>
         <p><b>Specificity</b> is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of adding values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.</p>
     </div>
+    </div>
 
     <div class="column" >
-        <h1>Ruleset for Specificity</h1>
-        <p>Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.</p>
+        <h1 id="c29">Ruleset for Specificity</h1>
+        <div id="d29">
+        <p>Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.
         <ol>
             <li>Count the number of IDs in the selector.</li>
             <li>Count the number of CLASS, pseudoclass, and attribute selectors.</li>
@@ -491,11 +522,13 @@
                 /* id=0 class=0 HTML=1 --> specificity = 001 */
             </li>
         </ul>
+    </p>
+    </div>
     </div>
 
     <div class="column" >
-        <h1>!important rule</h1>
-        <ul>
+        <h1 id="c30">!important rule</h1>
+        <ul id="d30">
             <li>This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
             <li>It indicates that this rule should take over any previous rules that might govern a specific element.</li>
             <li>Example <code>.selector{ color:blue !important; }</code></li>
@@ -504,8 +537,8 @@
     </div>
 
     <div class="column" id="todo" >
-        <h1>To Do</h1>
-        <ul>
+        <h1 id="c31">To Do</h1>
+        <ul id="d31">
             <li>Download, review, and complete the homework assignment from D2L</li>
             <li>Find a partner for your homework.</li>
             <li>Practice using advanced CSS selectors</li>
@@ -555,7 +588,7 @@
 
 
 
-
+        <script src="/scripts/toggle.js"></script>
 
 </body>
 </html>

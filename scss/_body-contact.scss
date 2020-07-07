@@ -81,9 +81,12 @@ h1  {
   
   .in5 {
     display: flex;
-    margin-top: 3em;
+    justify-content: space-evenly;
+    margin: 0.4em auto;
+    // margin-top: 3em;
     // border: 1px solid gold;
   }
+  
   
   .in5 p {
     // width: 30%;
@@ -97,7 +100,8 @@ h1  {
   .in5 input {
     // border: 1px solid gold;
     background-color: $brandColor6;
-    
+margin: 0;
+padding: 0;
   }
   
   

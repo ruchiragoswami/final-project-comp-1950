@@ -34,9 +34,11 @@
 <main> 
 
 <!-- lesson content -->
-    <div class="column" >
-        <h1>Agenda</h1>
-        <ul>
+<div>  <p class="inform"> Click on the Headings Below </p></div>
+
+    <div class="column p1" >
+        <h1 id="c1">Agenda</h1>
+        <ul id="d1">
             <li><a href="#charset" >Charsets</a></li>
             <li><a href="#html" >HTML, XHTML, HTML5</a></li>
             <li><a href="#semantics" >Semantics</a></li>
@@ -45,33 +47,36 @@
         </ul>
     </div>
 
-    <div class="column" id="charset">
-        <h1>Character Sets And Languages</h1>
-        <p>The W3C recommends the UTF-8 charset for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
+    <div class="column p2" id="charset">
+        <h1 id="c2">Character Sets And Languages</h1>
+        <p id="d2">The W3C recommends the UTF-8 charset for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
     </div>
 
 
-    <div class="column" >
-        <h1>Assign Character Set</h1>
-        <p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page:</p>
-        <p><strong>&ltmeta charset="utf-8" /></strong></p>
+    <div class="column p3" >
+        <h1 id="c3">Assign Character Set</h1>
+        <div id="d3"> 
+        <p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page: </p>
+        <strong>&ltmeta charset="utf-8" /></strong>
         <ul>
             <li>Write all your text-based code (.html, .css, .js, .php, etc) in UTF-8. At development time, ensure your text editor is saving files in this format. This setting is usually found in the application's Preferences menu option.</li>
             <li>Unless your audience includes very old browsers, you can code special characters directly into the HTML (you dont need to use HTML entities for most special characters).</li>
             <li>You cannot copy-paste rich text (such as Microsoft Word, or WordPad) into your HTML. The rich text formatting may result in an unreadable mess.</li>
             <li>An HTTP server can over-ride your charset preferences when it generates the HTTP header. Details on how to control this will be discussed later in this course.</li>                        
         </ul>
+        </div>
     </div>
 
-    <div class="column" id="html">
-        <h1>HTML lang Attribute</h1>
-        <p>Use the lang="" attribute to declare the language in HTML. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".</p>
-        <p>Use the language abbreviations from the standard ISO 639-1 code set (don't use ISO 639-2).</p>
+    <div class="column p4" id="html">
+        <h1 id="c4">HTML lang Attribute</h1>
+        <p id="d4">Use the lang="" attribute to declare the language in HTML. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".
+        Use the language abbreviations from the standard ISO 639-1 code set (don't use ISO 639-2).</p>
     </div>
 
-    <div class="column" >
-        <h1>HTML</h1>
-        <p>What started as a language defined by SGML (Standard Generalized Markup Language), HTML is used to mark up billions of pages, making up the bulk of the web.</p>
+    <div class="column p5" >
+        <h1 id="c5">HTML</h1>
+        <div id="d5"> 
+        <p >What started as a language defined by SGML (Standard Generalized Markup Language), HTML is used to mark up billions of pages, making up the bulk of the web.</p>
         <ul>
             <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
             <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
@@ -82,15 +87,17 @@
             <li>People had to learn as they went along</li>
             <li>A lot of early sites are poorly designed</li>
         </ul>
+        </div>
     </div>
 
-    <div class="column" >
-        <h1>HTML 4.01 template</h1>
-        <p>The problem with the state of HTML then was its reputation as a loose language. Poorly structured code would be rendered differently across user agents, leading to forked code and less predictable results.</p>                    
+    <div class="column p6" >
+        <h1 id="c6">HTML 4.01 template</h1>
+        <p id="d6">The problem with the state of HTML then was its reputation as a loose language. Poorly structured code would be rendered differently across user agents, leading to forked code and less predictable results.</p>                    
     </div>
 
-    <div class="column" >
-        <h1>XHTML</h1>
+    <div class="column p7" >
+        <h1 id="c7">XHTML</h1>
+        <div id="d7"> 
         <p>The XHTML specification was the result of rewriting HTML 4.01 using the ruleset derived from XML</p>                    
         <ul>
             <li>HTML 4.01 + XML = XHTML 1.0</li>
@@ -102,11 +109,12 @@
             <li>Predictable behavior across user agents.</li>
             <li>Porting to HTML5 is easy (if you also observe semantic guidelines).</li>
         </ul>
+        </div>
     </div>
 
-    <div class="column" >
-        <h1>XHTML Rules</h1>
-        <ul>
+    <div class="column p8" >
+        <h1  id="c8">XHTML Rules</h1>
+        <ul  id="d8">
             <li>All elements must be properly nested
                 <ul>
                     <li>This is not valid: &ltp>&ltb>Bolded Text&lt/p>&lt/b></li>
@@ -172,11 +180,12 @@
         </ul>
     </div>
 
-    <div class="column" >
-        <h1>HTML5</h1>
-        <p>As of October 28, 2014, HTML5 is the official W3C recommendation</p>
-        <p>HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions.</p>
-        <p>Significant features include:</p>
+    <div class="column p9" >
+        <h1 id="c9">HTML5</h1>
+        <div id="d9"> 
+        <p>As of October 28, 2014, HTML5 is the official W3C recommendation
+        HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions.</p>
+        Significant features include:
         <ul>
             <li>Ultra simple Doctype: &lt!DOCTYPE html></li>
             <li>Specifies how browsers should behave with imperfect code</li>
@@ -185,10 +194,12 @@
             <li>Backwards compatible - older versions of HTML can effectively be updated by simply changing the doctype to HTML5</li>
             <li>Guiding principles: Enhance semantic coding, Support existing content, Pave the cowpaths</li>                        
         </ul>
+        </div>    
     </div>
 
-    <div class="column" >
-        <h1>HTML 5 template</h1> 
+    <div class="column p10" >
+        <h1 id="c10">HTML 5 template</h1> 
+        <div id="d10"> 
         <h2>Paving the Cowpaths</h2>
         <p>Common developer practices have been simplified</p>
         <ul>
@@ -203,12 +214,14 @@
             <li>Including javascripts is simplified as well (type attribute is not required)
                 &ltscript src="javascripts.js">&lt/script></li>
         </ul>
+    </div>    
     </div>
 
-    <div class="column" >
-        <h1>HTML5: Enhanced Semantic Coding</h1>
+    <div class="column p11" >
+        <h1 id="c11" >HTML5: Enhanced Semantic Coding</h1>
+        <div id="d11"> 
         <p>It is crucial for all HTML content to be semantically marked up. This is how browsers, search engines, and screen readers make sense of online content.
-            HTML5 provides more than just adjustments to the markup, there are new, powerfully semantic elements:</p>
+            HTML5 provides more than just adjustments to the markup, there are new, powerfully semantic elements: </p>
         <ul>
             <li>&ltsection> is a tag representing a document or application section. in general, if you are planning to use a heading, start a new section. a section must contain a heading, and may contain article(s), possibly asides or even sub-sections</li>
             <li>&ltarticle> is an independent piece of content in a document (it could stand alone if removed from the page). an article might be a blog post, forum thread, news story, collection of product information, etc</li>
@@ -221,11 +234,13 @@
         </ul>
         <p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many div tags. eg: instead of the typical &ltdiv id="header">, use &ltheader>.</p>
         <p>Having trouble deciding which tag to use for what content? Try this HTML5 flowchart.</p>
+        </div>
     </div>
 
-    <div class="column" id="semantics" >
-        <h1>HTML5 Semantic Alterations</h1>
-        <p>HTML5 also brings a few notable semantic alterations to older tags:</p>
+    <div class="column p12" id="semantics" >
+        <h1 id="c12">HTML5 Semantic Alterations</h1>
+        <div id="d12"> 
+        <p >HTML5 also brings a few notable semantic alterations to older tags: </p>
         <ul>
             <li>&lta> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
             <li>&ltsmall> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the big element has been deprecated</li>
@@ -234,16 +249,17 @@
             <li>Deprecated tags: &ltbig>, &ltfont>, &ltstrike>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
             <li>Deprecated attributes: align, bgcolor, border, height, size, type, width and more. Developers should use CSS instead of these deprecated attributes.</li>
         </ul>
+        </div>
     </div>
 
-    <div class="column" >
-        <h1>HTML5 Content Models</h1>
-        <p>Pre-HTML5, there were basically two categories of tags: inline and block. HTML5 intoduces a more nuanced set of categories that allow for greater semantic sectioning of content. The content model will help the browser to determine the semantics of your content.</p>
+    <div class="column p13" >
+        <h1 id="c13">HTML5 Content Models</h1>
+        <p id="d13">Pre-HTML5, there were basically two categories of tags: inline and block. HTML5 intoduces a more nuanced set of categories that allow for greater semantic sectioning of content. The content model will help the browser to determine the semantics of your content.</p>
     </div>
 
-    <div class="column" >
-        <h1>Content Models</h1>
-        <ul>
+    <div class="column p14" >
+        <h1 id="c14">Content Models</h1>
+        <ul id="d14">
             <li>text-level content: most inline tags</li>
             <li>grouping content: most block tags</li>
             <li>replaced content: all the form widgets and related tags</li>
@@ -252,18 +268,21 @@
         </ul>
     </div>
 
-    <div class="column" >
-        <h1>Sectioning Content</h1>
+    <div class="column p15" >
+        <h1 id="c15">Sectioning Content</h1>
+        <div id="d15"> 
         <p>The &ltsection> tag can be used to semantically group content. It can remove ambiguity when a page is being processed by the browser, a screen reader, or search engine.</p>
         <p>For example, imagine you have created the following code:<br />
             Since content that follows a heading is presumed to be associated with that heading, the code above carries plenty of semantic value already. But, if the small tag's content is intended to apply to all cities, a browser has no way of knowing that. It will instead assume the small tag is associated with the preceding heading (&lth3>Tokyo&lt/h3>)</p>
         <p>Use the section tag to explicitly demarcate the start and end of the related content:</p>
         <p>This new sectioning will inform the browser that the small is associated with the h1</p>
         <p>In HTML5, each piece of sectioned content has its own self-contained outline. This means you wont need to worry as much about which level heading tag to use. You can use an h1 inside a section and it will be treated as the heading of the section, and have lesser semantic impact than an h1 that is at a higher level.</p>
+        </div>
     </div>
 
-    <div class="column" id="forms" >
-        <h1>Forms</h1>
+    <div class="column p16" id="forms" >
+        <h1 id="c16">Forms</h1>
+        <div id="d16"> 
         <p>HTML 5 adds several new form attributes that prove quite useful, even if some are as yet poorly supported.</p>
         <ul>
             <li><b>placeholder="value":</b> prepopulates field with data</li>
@@ -283,10 +302,12 @@
             </li>
         </ul>
     </div>
+    </div>
 
-    <div class="column" >
-        <h1>Scaleable Vector Graphics</h1>
-        <p>Scaleable Vector Graphics (SVG) can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent.</p>
+    <div class="column p17" >
+        <h1 id="c17">Scaleable Vector Graphics</h1>
+        <div id="d17"> 
+        <p>Scaleable Vector Graphics (SVG) can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent. </p>
         <p>You can use SVG graphics with the img tag, just as with raster graphics. You can also use .svg as a CSS background-image.</p>
         <p>&ltimg src="images/logo.svg" alt="COMP 1950 logo" /></p>
         <p>The png on the left is 26KB. The .svg on the right is only 4KB.</p>
@@ -368,11 +389,13 @@
             <source src="../videos/bear-in-water.mp4" type="video/mp4" />
         </video><br />
         <a href="../videos/bear-in-water.mp4" >Download the video</a><br />
+        </div>
     </div>
 
-    <div class="column" >
-        <h1>HTML5 Today</h1>
-        <p>User agent browsers will have varying support for the HTML5 specification.</p>
+    <div class="column p18" >
+        <h1 id="c18">HTML5 Today</h1>
+        <div id="d18"> 
+        <p>User agent browsers will have varying support for the HTML5 specification. </p>
         <ul>
             <li>caniuse.com is an excellent source for compatibility testing</li>
             <li>Try the HTML5Test to test a specific browser.</li>
@@ -386,18 +409,19 @@
             <li>Since HTML5 understands both HTML4 and XHTML tags, converting an older HTML file into HTML5 is simply a matter of updating the DOCTYPE and meta tag for charset.</li>                        
         </ul>
     </div>
+    </div>
 
 
-    <div class="column" id="todo" >
-        <h1>To Do</h1>
-        <ul>
+    <div class="column p19" id="todo" >
+        <h1 id="c19">To Do</h1>
+        <ul id="d19">
             <li>Download, review, and complete the homework assignment from D2L</li>
             <li>Review the HTML5 semantic tags, know how and when to use them to maxmize the semantic strucure of your HTML</li>
         </ul>
     </div>
 </section>
 
-<div class="go-back">  
+<div class="go-back p20">  
 <p><a href="lesson.html"> Back to Lessons Page</a></p>
 
 </div>
@@ -436,7 +460,7 @@
         
         </footer>
 
-
+        <script src="/scripts/toggle.js"></script>
 
 
 

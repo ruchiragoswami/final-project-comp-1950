@@ -78,6 +78,7 @@ h2 {
 }
 .box a {
   text-decoration: none;
+  color: #e6625b;
 }
 .box a:hover, .box a:focus {
   color: #CCCCCC;
@@ -121,7 +122,7 @@ article {
 
   .welcome2 {
     font-size: 0.6em;
-    padding: 0;
+    margin-left: 0.5em;
   }
 
   .decor {
@@ -291,6 +292,7 @@ p {
 
 .agenda h2 a {
   text-decoration: none;
+  color: #e6625b;
 }
 .agenda h2 a:hover, .agenda h2 a:focus {
   color: #CCCCCC;
@@ -403,6 +405,7 @@ p {
 }
 .les a {
   text-decoration: none;
+  color: #e6625b;
 }
 .les a:hover, .les a:focus {
   color: #CCCCCC;
@@ -537,7 +540,8 @@ input:focus {
 
 .in5 {
   display: flex;
-  margin-top: 3em;
+  justify-content: space-evenly;
+  margin: 0.4em auto;
 }
 
 .in5 p {
@@ -547,6 +551,8 @@ input:focus {
 
 .in5 input {
   background-color: #D2FDFF;
+  margin: 0;
+  padding: 0;
 }
 
 .input-msg {
@@ -600,6 +606,11 @@ textarea:focus {
   padding: 5px;
 }
 
+.inform {
+  color: red;
+  font-size: 1.2em;
+}
+
 .column:nth-of-type(even) {
   background: #FBE8A6;
 }
@@ -640,6 +651,15 @@ code {
 .imgs img {
   float: left;
   padding-right: 10px;
+}
+
+.go-back a {
+  text-decoration: none;
+  color: #e6625b;
+}
+.go-back a:hover, .go-back a:focus {
+  color: #CCCCCC;
+  background-color: #303c6c;
 }
 
 @media (max-width: 420px) {
@@ -745,7 +765,7 @@ nav a:hover::before {
   width: 100%;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 850px) {
   .menu-btn {
     display: none;
   }
