@@ -182,7 +182,7 @@ article {
 }
 @media (min-width: 920px) {
   body {
-    background-image: url(../images/bck-grnd.png);
+    background-image: url("../images/bck-grnd.png");
     background-attachment: fixed;
     background-repeat: repeat;
   }
