@@ -9,12 +9,12 @@
 h1, h2, h3 {
     font-family: $headingFont;
 }
+
 p { 
     font-family: $bodyFont;
     font-weight: 600;
 
 }
-
 
 .agenda {
     font-weight: 600;
@@ -23,16 +23,12 @@ p {
     margin: 0.5em;
     color: $brandColor1;
     padding-bottom: 0.5em;
-   
-
 }
 
 .agenda ul {
     list-style-type: none;
     margin:0;
     padding:0;
-    // list-style: none;
-    // @include intlink;
 }
 
 .agenda h2 {
@@ -50,8 +46,6 @@ p {
 .ag6,
 .ag12 {
     background-color: $brandColor5;
-    // color: $brandColor6;
-    // border: none;
 }
 
 // Grid Styles 
@@ -59,33 +53,23 @@ p {
 
 @media (min-width: 740px) {
     
-    // .agenda {
-    //     margin:0;
-    // }
     .agenda:hover  {
         transform: scale(1.1);
         border: 1px solid $brandColor3; 
     }
 
     
-    .sch-container  {      
-    //  border: 2px solid red;
-        // margin:  50px 0 100px 0;
+    .sch-container  {     
         display: grid;
-        // grid-gap: 1em;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(100px, auto);
-        // grid-gap: 20px;
-
         grid-template-areas: "one two three"
                                 "four five six"
                                 "seven eight nine"
                                 "ten eleven twelve" ;
-
     }
 
  
-
     .ag1 { 
         grid-area: one;
     }
@@ -139,14 +123,11 @@ p {
     .placeholder {
         height: 80px;
         margin: 0.3em;
-        // padding-top: 1.5em;
         color: $brandColor1;
-        // vertical-align: middle;
         border: 2px solid $brandColor1;
     }
 
     .placeholder h2 {
-        // vertical-align: middle;
         padding-top: 0.5em;
     }
 
@@ -162,18 +143,14 @@ p {
                                 "five six seven eight"
                                 "nine ten eleven twelve ";
                             
-
-        
     }
+
 
     .placeholder {
         border: none;
         height: 180px;
         padding-top: 0.3em;
     }
-
-    
-    
 
 }
 

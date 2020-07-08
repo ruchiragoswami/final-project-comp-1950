@@ -2,148 +2,113 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-
-
-
-
 h1  {
     text-align: center;
     padding: 5px;
     margin-top: 10px;
-  }
+}
   
-  
-  
-  
-  form {
-    margin: 0 auto;
-    // font-size: 1.4em;
 
-  }
+form {
+  margin: 0 auto;
+}
   
-  fieldset {
-    border: none;
-    margin: 10px auto;
-    margin-bottom: 10px;
-  }
+fieldset {
+  border: none;
+  margin: 10px auto;
+  margin-bottom: 10px;
+}
   
-  .form-container {
-    //   border: 2px solid red;
-      padding: 0.6em;
-      margin-bottom:  2em;
-      font-size: 1.4em;
-      font-weight: 600;
-      h2 { 
-          font-size: 1.1em;
-      }
-  }
-  
-  
-  legend {
-    display: inline-block; 
-  }
-  
-  
-//   span {
-//     display: inline-block;
-//     text-align: right;
-//     background-color: #4BC970;
-//     border-radius: 50%;
-//     padding: 5px 10px;
-//   }
-  
-  
-  
-  .input-group {
-    margin: 2em auto;
-    padding:5px 0;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  
-  .input-group input {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #E8EEEF;
+.form-container {
+    padding: 0.6em;
+    margin-bottom:  2em;
+    font-size: 1.4em;
+    font-weight: 600;
+    h2 { 
+        font-size: 1.1em;
+    }
+}
 
-  }
-  
-  
-  input:focus { 
-    border: 5px solid  $brandColor3;
-    border-radius: 4px;
-  }
-  
-  .in5 {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0.4em auto;
-    // margin-top: 3em;
-    // border: 1px solid gold;
-  }
-  
-  
-  .in5 p {
-    // width: 30%;
-    margin: 0 auto;
-    font-size: 0.9em;
-    // line-
-    // border: 1px solid red;
 
-  }
+.input-group {
+  margin: 2em auto;
+  padding:5px 0;
+}
   
-  .in5 input {
-    // border: 1px solid gold;
-    background-color: $brandColor6;
-margin: 0;
-padding: 0;
-  }
-  
-  
-  
-  .input-msg {
-    // border: 1px solid red;
-    padding-top: 20px;
-    padding-bottom: 1em;
-  }
-  
-  textarea {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-    background-color: $brandColor6;
-  }
-  
-  textarea:focus { 
-    border: 4px solid $brandColor3;;
-  }
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+}
   
   
+.input-group input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #E8EEEF;
+}
   
-  .push {
-    width: 20%;
-    height: 50px;
-    background-color: $brandColor2;
-    border-radius: 7px;
-    margin-top: 0;
-    margin-bottom: 20px ;
-    color: $brandColor1;
-    font-size: 1em;
-    font-weight: bold;
+  
+input:focus { 
+  border: 5px solid  $brandColor3;
+  border-radius: 4px;
+}
+  
+.in5 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.4em auto;
+}
+  
+  
+.in5 p {
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+  
+.in5 input {
+  background-color: $brandColor6;
+  margin: 0;
+  padding: 0;
+}
+  
+
+.input-msg {
+  padding-top: 20px;
+  padding-bottom: 1em;
+}
+  
+textarea {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: $brandColor6;
+}
+  
+textarea:focus { 
+  border: 4px solid $brandColor3;;
+}
+  
     
-  }
+.push {
+  width: 20%;
+  height: 50px;
+  background-color: $brandColor2;
+  border-radius: 7px;
+  margin-top: 0;
+  margin-bottom: 20px ;
+  color: $brandColor1;
+  font-size: 1em;
+  font-weight: bold;
   
+}
+  
+
 @media (min-width: 740px) {
     .form-container {
         width: 70%;
-        //   border: 2px solid red;
         background-color: #F4F7F8;
         border-radius: 10px;
         box-shadow: 0 0 0 10px $brandColor5,

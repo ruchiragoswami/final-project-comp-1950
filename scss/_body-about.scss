@@ -61,15 +61,12 @@ table th, td {
     .row {
         margin: 0;
         background-color: $brandColor5;
-        // padding:0;
     }
 
     .course-info {
-        // border: 2px solid red;
         margin-bottom: 0.5em;;
         padding:0.5em ;
         background-color: $wrapperBgColor;
-        // color: 
         display: grid;
         grid-gap: 0.5em;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,8 +74,7 @@ table th, td {
         grid-template-areas:    "one one two two  "
                                 "four three three three"
                                 "five three three three"
-                                "five three three three"
-                    ;
+                                "five three three three" ;
 
     
     }
@@ -97,13 +93,10 @@ table th, td {
 
     .evaluation {
         grid-area: four;
-        // background-color: $brandColor2;
     }
 
     .idecor {
         grid-area: five;
     }
-
-
 
 }

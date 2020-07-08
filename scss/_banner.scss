@@ -3,8 +3,6 @@
 @use 'mixins' as *;
 
 .home-banner {
-    // position: relative;
-    // width: 95vw;
     margin: 0 auto;
 }
 
@@ -14,12 +12,8 @@
 } 
 
 .about-banner {
-    // border: 2px solid red;
     margin: 0.4em;
 }
-
-// @media (min-width: )
-
 
 
 @media (min-width: 920px) {
@@ -27,7 +21,4 @@
         width: 100%;
         height: 550px;
     }
-
-
-
 }

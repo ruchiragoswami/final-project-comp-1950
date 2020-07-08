@@ -6,24 +6,12 @@
 
 @mixin intlink {
     a {
-    text-decoration: none;
-    color: #e6625b ;
-   
-    
-
-   &:hover, 
-   &:focus {
-        color:#CCCCCC ;
-        background-color: #303c6c;
+        text-decoration: none;
+        color: #e6625b ;
+        &:hover, 
+        &:focus {
+            color:#CCCCCC ;
+            background-color: #303c6c;
+        }
     }
-    
-
-
-    // #{$hover} {
-    //     background-color: rgba(rgb(211, 53, 53), 0.3);
-    // }
-
-    }
-
-
 }

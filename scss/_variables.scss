@@ -2,9 +2,7 @@
 
 @use '_mixins' as *;
 
-// Colors
 
-// 1=#501F3A; #4056A1; 3=#14A098; 5=#CCCCCC;
 
 $brandColor1: #303c6c ;
 $brandColor1Dark: darken($brandColor1, 20);
@@ -20,10 +18,6 @@ $brandColor5: #CCCCCC;
 $brandColor6: #D2FDFF;
 
 
-
-
-
-
 // Text Color
 
 $txtColorDark: black;
@@ -34,9 +28,6 @@ $headingFont : georgia;
 $bodyFont: helvetica;
 $lineHeight : 1.4;
 
-// layout variables
-
-$pad: 30px;
 
 // Utility variable
 
